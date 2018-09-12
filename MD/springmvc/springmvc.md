@@ -87,6 +87,4 @@ public class ItemsController {
 }
 ```
 
-![](/assets/importspringmvc1.png)
-
-![](https://github.com/M78Snail/ReadReview/blob/master/MD/assets/importspringmvc1.png)
+![](../assets/importspringmvc1.png)
