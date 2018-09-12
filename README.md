@@ -5,7 +5,7 @@
 
 | 📊 |⚔️ | 🖥 | 🚏 | 🏖  | 🌁| 📮 | 🔍 | 🚀 | 🌈 |💡
 | :--------: | :---------: | :---------: | :---------: | :---------: | :---------:| :---------: | :-------: | :-------:| :------:|:------:|
-| [集合](#常用集合) | [多线程](#java-多线程)|[JVM](#jvm) | [分布式](#分布式相关) |[框架](#常用框架第三方组件)|[架构设计](#架构设计)| [数据库](#db-相关) |[算法](#数据结构与算法)|[Netty](#netty-相关)| [附加技能](#附加技能)|[联系作者](#联系作者) |
+| [集合](#常用集合) | [多线程](#java-多线程)|[JVM](#jvm) | [分布式](#分布式相关) |[SSM框架](#SSM)|[架构设计](#架构设计)| [数据库](#db-相关) |[算法](#数据结构与算法)|[Netty](#netty-相关)| [附加技能](#附加技能)|[环境配置](#环境配置) |
 
 
 
@@ -37,19 +37,33 @@
 
 ### 分布式相关
 
-- [分布式限流](http://crossoverjie.top/2018/04/28/sbc/sbc7-Distributed-Limit/)
-- [基于 Redis 的分布式锁](http://crossoverjie.top/2018/03/29/distributed-lock/distributed-lock-redis/)
+- [Dubbo使用](https://github.com/M78Snail/ReadReview/blob/master/MD/distributed/dubbo.md)
+- Solr
+  - [Solr单机版](https://github.com/M78Snail/ReadReview/blob/master/MD/solr/solr.md)
+  - [Solr集群](https://github.com/M78Snail/ReadReview/blob/master/MD/solr/solr_jiqun.md)
+  - [ActiveMQ同步索引库](https://github.com/M78Snail/ReadReview/blob/master/MD/solr/activemq.md)
 - [分布式缓存设计](https://github.com/crossoverJie/JCSprout/blob/master/MD/Cache-design.md)
 - [分布式 ID 生成器](https://github.com/crossoverJie/JCSprout/blob/master/MD/ID-generator.md)
 
-### 常用框架\第三方组件
+### SSM
 
-- [Spring Bean 生命周期](https://github.com/crossoverJie/JCSprout/blob/master/MD/spring/spring-bean-lifecycle.md)
-- [Spring AOP 的实现原理](https://github.com/crossoverJie/JCSprout/blob/master/MD/SpringAOP.md) 
-- [Guava 源码分析（Cache 原理）](https://crossoverjie.top/2018/06/13/guava/guava-cache/)
-- [轻量级 HTTP 框架](https://github.com/crossoverJie/cicada)
-- SpringBoot 启动过程
-- Tomcat 类加载机制
+- SpringMVC
+  - [SpringMVC配置](https://github.com/M78Snail/ReadReview/blob/master/MD/springmvc/springmvc.md)
+  - [参数绑定](https://github.com/M78Snail/ReadReview/blob/master/MD/springmvc/can_shu_bang_ding.md)
+  - [高级参数绑定](https://github.com/M78Snail/ReadReview/blob/master/MD/springmvc/gao-ji-can-shu-bang-ding.md)
+  - [@RequestMapping注解的使用](https://github.com/M78Snail/ReadReview/blob/master/MD/springmvc/requestmappingzhu-jie-de-shi-yong.md)
+  - [Contriller方法返回值](https://github.com/M78Snail/ReadReview/blob/master/MD/springmvc/controllerfang-fa-fan-hui-zhi.md)
+  - [SpringMVC中异常处理](https://github.com/M78Snail/ReadReview/blob/master/MD/springmvc/springmvczhong-yi-chang-chu-li.md)
+  - [图片上传处理](https://github.com/M78Snail/ReadReview/blob/master/MD/springmvc/tu-pian-shang-chuan-chu-li.md)
+  - [JSON数据交互](https://github.com/M78Snail/ReadReview/blob/master/MD/springmvc/jsonshu-ju-zhi-chi.md)
+  - [SpringMVC实现Restful](https://github.com/M78Snail/ReadReview/blob/master/MD/springmvc/springmvcshi-xian-restful.md)
+  - [拦截器](https://github.com/M78Snail/ReadReview/blob/master/MD/springmvc/lan-jie-qi.md)
+  - [登录权限认证](https://github.com/M78Snail/ReadReview/blob/master/MD/springmvc/deng-lu-quan-xian-ren-zheng.md)
+  - [获取配置文件中的常量](https://github.com/M78Snail/ReadReview/blob/master/MD/springmvc/huo-qu-properties-wen-jian-zhong-ding-yi-de-chang-liang.md)
+- Spring
+  - 定位
+- MyBatis
+- [整合SSM](https://github.com/crossoverJie/cicada)
 
 
 ### 架构设计
@@ -91,8 +105,6 @@
 - [如何高效的使用 Git](https://github.com/crossoverJie/JCSprout/blob/master/MD/additional-skills/how-to-use-git-efficiently.md)
 
 
-### 联系作者
+### 环境配置
 
-> crossoverJie#gmail.com
-
-<img src="https://ws2.sinaimg.cn/large/006tKfTcly1fsa01u7ro1j30gs0howfq.jpg" width="300"/> 
+- [Linux开发环境](https://github.com/M78Snail/ReadReview/blob/master/MD/setting/linux.md)
