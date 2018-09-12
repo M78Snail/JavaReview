@@ -1,22 +1,22 @@
 # 读书笔记
 
 
-> `Java Core Sprout`：处于萌芽阶段的 Java 核心知识库。
+> `Java Core `：处于萌芽阶段的 Java 核心知识库。
 
 | 📊 |⚔️ | 🖥 | 🚏 | 🏖  | 🌁| 📮 | 🔍 | 🚀 | 🌈 |💡
 | :--------: | :---------: | :---------: | :---------: | :---------: | :---------:| :---------: | :-------: | :-------:| :------:|:------:|
-| [集合](#常用集合) | [多线程](#java-多线程)|[JVM](#jvm) | [分布式](#分布式相关) |[SSM框架](#ssm框架) |[架构设计](#架构设计)| [数据库](#db-相关) |[算法](#数据结构与算法)|[Netty](#netty-相关)| [附加技能](#附加技能)|[环境配置](#环境配置) |
+| [集合](#常用集合) | [操作系统](#操作系统)|[JVM](#jvm) | [分布式](#分布式相关) |[SSM框架](#ssm框架) |[网络](#网络)| [数据库](#db-相关) |[数据结构与算法](#数据结构与算法)|[大数据](#大数据)| [设计模式](#设计模式)|[环境配置](#环境配置) |
 
 
 
 ### 常用集合
-- [ArrayList/Vector](https://github.com/crossoverJie/JCSprout/blob/master/MD/ArrayList.md)
-- [LinkedList](https://github.com/crossoverJie/JCSprout/blob/master/MD/LinkedList.md)
-- [HashMap](https://github.com/crossoverJie/JCSprout/blob/master/MD/HashMap.md)
-- [HashSet](https://github.com/crossoverJie/JCSprout/blob/master/MD/collection/HashSet.md)
-- [LinkedHashMap](https://github.com/crossoverJie/JCSprout/blob/master/MD/collection/LinkedHashMap.md)
+- [HashMap源码分析及面试题解答](https://github.com/M78Snail/ReadReview/blob/master/MD/collection/hashmapyuan-ma-fen-xi-ji-mian-shi-ti-jie-da.md)
+- [HashSet源码分析](https://github.com/M78Snail/ReadReview/blob/master/MD/collection/javaji-chu.md)
+- [HashTable源码分析](https://github.com/M78Snail/ReadReview/blob/master/MD/collection/hashtableyuan-ma-fen-xi.md)
+- [ConcurrentHashMap源码分析](https://github.com/M78Snail/ReadReview/blob/master/MD/collection/concurrenthashmapyuan-ma-fen-xi.md)
+- [死锁](https://github.com/M78Snail/ReadReview/blob/master/MD/collection/si-suo.md)
 
-### Java 多线程
+### 操作系统
 - [多线程中的常见问题](https://github.com/crossoverJie/JCSprout/blob/master/MD/Thread-common-problem.md)
 - [synchronized 关键字原理](https://github.com/crossoverJie/JCSprout/blob/master/MD/Synchronize.md)
 - [多线程的三大核心](https://github.com/crossoverJie/JCSprout/blob/master/MD/Threadcore.md)
@@ -79,7 +79,7 @@
 - [整合SSM](https://github.com/M78Snail/ReadReview/blob/master/MD/ssm/zheng-he-ssm.md)
 
 
-### 架构设计
+### 网络
 - [秒杀系统设计](https://github.com/crossoverJie/JCSprout/blob/master/MD/Spike.md)
 - [秒杀架构实践](http://crossoverjie.top/2018/05/07/ssm/SSM18-seconds-kill/)
 
@@ -106,11 +106,11 @@
 - [链表排序](./src/main/java/com/crossoverjie/algorithm/LinkedListMergeSort.java)
 - [数组右移 k 次](./src/main/java/com/crossoverjie/algorithm/ArrayKShift.java)
 
-### Netty 相关
+### 算法
 - [SpringBoot 整合长连接心跳机制](https://crossoverjie.top/2018/05/24/netty/Netty(1)TCP-Heartbeat/)
 - [从线程模型的角度看 Netty 为什么是高性能的？](https://crossoverjie.top/2018/07/04/netty/Netty(2)Thread-model/)
 
-### 附加技能
+### 设计模式
 
 - [TCP/IP 协议](https://github.com/crossoverJie/JCSprout/blob/master/MD/TCP-IP.md)
 - [一个学渣的阿里之路](https://crossoverjie.top/2018/06/21/personal/Interview-experience/)
