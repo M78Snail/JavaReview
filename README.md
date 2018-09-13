@@ -90,6 +90,7 @@
 - Redis
   - [什么是Redis](https://github.com/M78Snail/ReadReview/blob/master/MD/redis/what_is_redis.md)
   - [Redis安装与使用](https://github.com/M78Snail/ReadReview/blob/master/MD/redis/redis_install_start.md)
+  - [Redis的Jedis使用方法](https://github.com/M78Snail/ReadReview/blob/master/MD/redis/jedis.md)
 
 ### 数据结构与算法
 - [红包算法](https://github.com/crossoverJie/JCSprout/blob/master/src/main/java/com/crossoverjie/red/RedPacket.java)

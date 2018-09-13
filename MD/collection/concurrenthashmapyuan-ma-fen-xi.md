@@ -18,7 +18,7 @@
 
 ConcurrentHashMap的数据结构为一个Segment数组，Segment的数据结构为HashEntry的数组，而HashEntry存的是我们的键值对，可以构成链表。可以简单的理解为数组里装的是HashMap
 
-![](/assets/import_conhashmap.png)
+![](../assets/collection/import_conhashmap.png)
 
 从上面的结构我们可以了解到，ConcurrentHashMap定位一个元素的过程需要进行两次Hash操作，第一次Hash定位到Segment，第二次Hash定位到元素所在的链表的头部，因此，这一种结构的带来的副作用是Hash的过程要比普通的HashMap要长，但是带来的好处是写操作的时候可以只对元素所在的Segment进行加锁即可，不会影响到其他的Segment。正是因为其内部的结构以及机制，ConcurrentHashMap在并发访问的性能上要比Hashtable和同步包装之后的HashMap的性能提高很多。在理想状态下，ConcurrentHashMap 可以支持 16 个线程执行并发写操作（如果并发级别设置为 16），及任意数量线程的读操作
 
@@ -181,7 +181,7 @@ ConcurrentHashMap 的高并发性主要来自于三个方面：
 
 ## 七、ConcurrentHashMap与HashTable最大的区别 {#七、ConcurrentHashMap与HashTable最大的区别}
 
-![](/assets/import_table_hash.png)
+![](../assets/collection/import_table_hash.png)
 
 
 

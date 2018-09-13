@@ -113,11 +113,3 @@ public void run() {
 * **避免无限期的等待：**
   如果两个线程正在等待对象结束，无限期的使用线程加入，如果你的线程必须要等待另一个线程的结束，若是等待进程的结束加入最好准备最长时间。
 
-原文链接：
-
-[journaldev](http://www.journaldev.com/1058/java-deadlock-example-and-how-to-analyze-deadlock-situation#comment-27879)翻译：[ImportNew.com](http://www.importnew.com/)-[范琦琦](http://www.importnew.com/author/fanqiqi)
-
-译文链接：[http://www.importnew.com/9668.html](http://www.importnew.com/9668.html)
-
-\[**转载请保留原文出处、译者和译文链接。**\]
-

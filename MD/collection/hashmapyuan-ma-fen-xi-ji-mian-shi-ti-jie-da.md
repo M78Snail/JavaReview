@@ -9,7 +9,7 @@
 
 HashMap是一个“链表散列”的数据结构，即数组和链表的结合体，如图所示
 
-![](/assets/import_hashmap.png)
+![](../assets/collection/import_hashmap.png)
 
 从图中看出，HashMap底层就是一个数组结构，数组中的每一项又是一个链表，当新建一个 HashMap 的时候，就会初始化一个数组，我们可以查看HashMap源码，在构造函数中
 

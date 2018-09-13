@@ -1,10 +1,29 @@
+# Redis的安装
+
+Redis是c语言开发的。
+
+安装redis需要c语言的编译环境。如果没有gcc需要在线安装。
+
+```
+yum install gcc-c++
+```
+
+安装步骤：
+
+1. 第一步：redis的源码包上传到linux系统。
+2. 第二步：解压缩redis。
+3. 第三步：编译。进入redis源码目录。make 
+4. 第四步：安装。make install PREFIX=/usr/local/redis（PREFIX参数指定redis的安装目录。一般软件安装到/usr目录下）
+
 ## 单机启动
 
 ```
 ./redis-server redis.conf
 ```
 
-## 集群启动
+
+
+# Redis集群的搭建
 
 **/usr/local/redis-cluster**
 
@@ -19,87 +38,59 @@
 ```
 
 ## 集群连接：
+Redis集群中至少应该有三个节点。要保证集群的高可用，需要每个节点有一个备份机。
+Redis集群至少需要6台服务器。
 
+搭建伪分布式。可以使用一台虚拟机运行6个redis实例。需要修改redis的端口号7001-7006
+
+### 1、使用ruby脚本搭建集群。需要ruby的运行环境。
+
+```
+安装ruby
+yum install ruby
+yum install rubygems
+```
+
+### 2、安装ruby脚本运行使用的包。
+
+```
+[root@localhost ~]# gem install redis-3.0.0.gem 
+Successfully installed redis-3.0.0
+1 gem installed
+Installing ri documentation for redis-3.0.0...
+Installing RDoc documentation for redis-3.0.0...
+[root@localhost ~]# 
+
+[root@localhost ~]# cd redis-3.0.0/src
+[root@localhost src]# ll *.rb
+-rwxrwxr-x. 1 root root 48141 Apr  1  2015 redis-trib.rb
+```
+
+### 3、搭建伪分布式
+
+1. 第一步：创建6个redis实例，每个实例运行在不同的端口。需要修改redis.conf配置文件。配置文件中还需要把cluster-enabled yes前的注释去掉。
+2. 第二步：启动每个redis实例。
+3. 第三步：使用ruby脚本搭建集群。
+ ```
+./redis-trib.rb create --replicas 1 192.168.25.153:7001 192.168.25.153:7002 192.168.25.153:7003 192.168.25.153:7004 192.168.25.153:7005 192.168.25.153:7006
+ ```
+4. 第四步：创建关闭集群的脚本：
+```
+[root@localhost redis-cluster]# vim shutdow-all.sh
+redis01/redis-cli -p 7001 shutdown
+redis01/redis-cli -p 7002 shutdown
+redis01/redis-cli -p 7003 shutdown
+redis01/redis-cli -p 7004 shutdown
+redis01/redis-cli -p 7005 shutdown
+redis01/redis-cli -p 7006 shutdown
+[root@localhost redis-cluster]# chmod u+x shutdow-all.sh 
+```
+5. 第五步：Redis-cli连接集群
 ```
 redis01/redis-cli -p 7006 -c
 ```
 
-## JedisCluster Java连接
-
-```java
-// 创建一个JedisCluster对象，构造参数Set类型，集合中每个元素是HostAndPort类型
-Set<HostAndPort> nodes = new HashSet<>();
-// 向集合中添加节点
-nodes.add(new HostAndPort("192.168.25.128", 7001));
-nodes.add(new HostAndPort("192.168.25.128", 7002));
-nodes.add(new HostAndPort("192.168.25.128", 7003));
-nodes.add(new HostAndPort("192.168.25.128", 7004));
-nodes.add(new HostAndPort("192.168.25.128", 7005));
-nodes.add(new HostAndPort("192.168.25.128", 7006));
-JedisCluster jdCluster = new JedisCluster(nodes);
-// 直接使用JedisCluster操作redis，自带连接池。
-jdCluster.set("cluster-test", "hello jedis cluster");
-
-System.out.println(jdCluster.get("cluster"));
-// 系统关闭前关闭JedisCluster
-jdCluster.close();
-```
-
-## 单机版和集群版配置
-
-```java
-<?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans"
-    xmlns:context="http://www.springframework.org/schema/context" xmlns:p="http://www.springframework.org/schema/p"
-    xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
-    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
-    http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
-    http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.0.xsd">
-    <context:annotation-config />
-    <!-- redis单机版 -->
-    <bean id="jedisPool" class="redis.clients.jedis.JedisPool">
-        <constructor-arg name="host" value="192.168.25.128" />
-        <constructor-arg name="port" value="6379" />
-    </bean>
-    <bean id="jedisClientPool" class="com.taotao.jedis.JedisClientPool" />
-
-
-    <!-- redis集群 -->
-    <bean id="jedisCluster" class="redis.clients.jedis.JedisCluster">
-        <constructor-arg>
-            <set>
-                <bean class="redis.clients.jedis.HostAndPort">
-                    <constructor-arg name="host" value="192.168.25.128" />
-                    <constructor-arg name="port" value="7001" />
-                </bean>
-                <bean class="redis.clients.jedis.HostAndPort">
-                    <constructor-arg name="host" value="192.168.25.128" />
-                    <constructor-arg name="port" value="7002" />
-                </bean>
-                <bean class="redis.clients.jedis.HostAndPort">
-                    <constructor-arg name="host" value="192.168.25.128" />
-                    <constructor-arg name="port" value="7003" />
-                </bean>
-                <bean class="redis.clients.jedis.HostAndPort">
-                    <constructor-arg name="host" value="192.168.25.128" />
-                    <constructor-arg name="port" value="7004" />
-                </bean>
-                <bean class="redis.clients.jedis.HostAndPort">
-                    <constructor-arg name="host" value="192.168.25.128" />
-                    <constructor-arg name="port" value="7005" />
-                </bean>
-                <bean class="redis.clients.jedis.HostAndPort">
-                    <constructor-arg name="host" value="192.168.25.128" />
-                    <constructor-arg name="port" value="7006" />
-                </bean>
-            </set>
-        </constructor-arg>
-    </bean>
-    <bean id="jedisClientCluster" class="com.taotao.jedis.JedisClientCluster" />
-</beans>
-```
+-c：代表连接的是redis集群
 
 
 
