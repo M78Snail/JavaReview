@@ -87,4 +87,4 @@ public class ItemsController {
 }
 ```
 
-![](../assets/importspringmvc1.png)
+![](/assets/importspringmvc1.png)

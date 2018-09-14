@@ -5,7 +5,7 @@
 
 | 📊 |⚔️ | 🖥 | 🚏 | 🏖  | 🌁| 📮 | 🔍 | 🚀 | 🌈 |💡
 | :--------: | :---------: | :---------: | :---------: | :---------: | :---------:| :---------: | :-------: | :-------:| :------:|:------:|
-| [集合](#常用集合) | [操作系统](#操作系统)|[JVM](#jvm) | [分布式](#分布式相关) |[SSM框架](#ssm框架) |[网络](#网络)| [数据库](#db-相关) |[数据结构](#数据结构与算法)|[大数据](#大数据)| [设计模式](#设计模式)|[环境配置](#环境配置) |
+| [集合](#常用集合) | [操作系统](#操作系统)|[JVM](#jvm) | [分布式](#分布式相关) |[SSM框架](#ssm框架) |[网络](#网络)| [数据库](#db-相关) |[算法](#数据结构与算法)|[大数据](#大数据)| [设计模式](#设计模式)|[环境配置](#环境配置) |
 
 
 
@@ -17,23 +17,25 @@
 - [死锁](https://github.com/M78Snail/ReadReview/blob/master/MD/collection/si-suo.md)
 
 ### 操作系统
-- [多线程中的常见问题](https://github.com/crossoverJie/JCSprout/blob/master/MD/Thread-common-problem.md)
-- [synchronized 关键字原理](https://github.com/crossoverJie/JCSprout/blob/master/MD/Synchronize.md)
-- [多线程的三大核心](https://github.com/crossoverJie/JCSprout/blob/master/MD/Threadcore.md)
-- [对锁的一些认知](https://github.com/crossoverJie/JCSprout/blob/master/MD/Java-lock.md)
-- [ReentrantLock 实现原理 ](https://github.com/crossoverJie/JCSprout/blob/master/MD/ReentrantLock.md)
-- [ConcurrentHashMap 的实现原理](https://github.com/crossoverJie/JCSprout/blob/master/MD/ConcurrentHashMap.md)
-- [如何优雅的使用和理解线程池](https://github.com/crossoverJie/JCSprout/blob/master/MD/ThreadPoolExecutor.md)
-- [深入理解线程通信](https://github.com/crossoverJie/JCSprout/blob/master/MD/concurrent/thread-communication.md)
-- [交替打印奇偶数](https://github.com/crossoverJie/JCSprout/blob/master/src/main/java/com/crossoverjie/actual/TwoThread.java)
+- [进程和线程的区别](https://github.com/M78Snail/ReadReview/blob/master/MD/system/jin-cheng-he-xian-cheng-de-qu-bie.md)
+- [死锁的必要条件，怎么处理死锁](https://github.com/M78Snail/ReadReview/blob/master/MD/system/si-suo-de-bi-yao-tiao-jian-ff0c-zen-yao-chu-li-si-suo.md)
+- [Window内存管理方式](https://github.com/M78Snail/ReadReview/blob/master/MD/system/window-nei-cun-guan-li-fang-shi-ff1a-duan-cun-chu-ff0c-ye-cun-chu-ff0c-duan-ye-cun-chu.md)
+- [进程的几种状态](https://github.com/M78Snail/ReadReview/blob/master/MD/system/jin-cheng-de-ji-zhong-zhuang-tai.md)
+- [IPC几种通信方式](https://github.com/M78Snail/ReadReview/blob/master/MD/system/ipc-ji-zhong-tong-xin-fang-shi.md)
+- [什么是虚拟内存](https://github.com/M78Snail/ReadReview/blob/master/MD/system/shi-yao-shi-xu-ni-nei-cun.md)
+- [虚拟地址，逻辑地址，线性地址，物理地址的区别](https://github.com/M78Snail/ReadReview/blob/master/MD/system/xu-ni-di-zhi-3001-luo-ji-di-zhi-3001-xian-xing-di-zhi-3001-wu-li-di-zhi-de-qu-bie.md)
 
 ### JVM
-- [Java 运行时内存划分](https://github.com/crossoverJie/JCSprout/blob/master/MD/MemoryAllocation.md)
--  [类加载机制](https://github.com/crossoverJie/JCSprout/blob/master/MD/ClassLoad.md)
--  [OOM 分析](https://github.com/crossoverJie/JCSprout/blob/master/MD/OOM-analysis.md)
-- [垃圾回收](https://github.com/crossoverJie/JCSprout/blob/master/MD/GarbageCollection.md)
-- [对象的创建与内存分配](https://github.com/crossoverJie/JCSprout/blob/master/MD/newObject.md)
-- [你应该知道的 volatile 关键字](https://github.com/crossoverJie/JCSprout/blob/master/MD/concurrent/volatile.md)
+- [内存模型以及分区](https://github.com/M78Snail/ReadReview/blob/master/MD/jvm/nei-cun-mo-xing-yi-ji-fen-qu-ff0c-xu-yao-xiang-xi-dao-mei-ge-qu-fang-shi-yao.md)
+- [堆里面的分区](https://github.com/M78Snail/ReadReview/blob/master/MD/jvm/dui-li-miande-fen-qu-ff1a-eden-survival-from-to-ff0c-lao-nian-dai-ff0c-ge-zi-de-te-dian.md)
+- [对象的创建与内存分配](https://github.com/M78Snail/ReadReview/blob/master/MD/jvm/dui-xiang-chuang-jian-fang-fa-ff0c-dui-xiang-de-nei-cun-fen-pei-ff0c-dui-xiang-de-fang-wen-ding-wei.md)
+- [GC的两种判定方法](https://github.com/M78Snail/ReadReview/blob/master/MD/jvm/gcde-liang-zhong-pan-ding-fang-fa-ff1a-yin-yong-ji-shu-yu-yin-yong-lian.md)
+- [GC的三种收集方法](https://github.com/M78Snail/ReadReview/blob/master/MD/jvm/gcde-san-zhong-shou-ji-fang-fa-ff1a-biao-ji-qing-chu-3001-biao-ji-zheng-li-3001-fu-zhi-suan-fa-de-yuan-li-yu-te-dian-ff0c-fen-bie-yong-zai-shi-yao-di-fang.md)
+- [GC收集器有哪些？它们的特点是？](https://github.com/M78Snail/ReadReview/blob/master/MD/jvm/gcshou-ji-qi-you-na-xie-ff1f-ta-men-de-te-dian-shi-ff1f.md)
+- [Minor GC与Full GC分别在什么时候发生](https://github.com/M78Snail/ReadReview/blob/master/MD/jvm/minor-gcyu-full-gc-fen-bie-zai-shi-yao-shi-hou-fa-sheng-ff1f.md)
+- [类加载的五个过程](https://github.com/M78Snail/ReadReview/blob/master/MD/jvm/lei-jia-zai-de-wu-ge-guo-cheng-ff1a-jia-zai-3001-yan-zheng-3001-zhun-bei-3001-jie-xi-3001-chu-shi-hua.md)
+- [双亲委派模型](https://github.com/M78Snail/ReadReview/blob/master/MD/jvm/shuang-qin-wei-pai-mo-xing-ff1a-bootstrap-classloader-extension-classloader-applicationclassloader.md)
+- [分派：静态分派与动态分派](https://github.com/M78Snail/ReadReview/blob/master/MD/jvm/fen-pai-ff1a-jing-tai-fen-pai-yu-dong-tai-fen-pai.md)
 
 ### 分布式相关
 
@@ -42,8 +44,6 @@
   - [Solr单机版](https://github.com/M78Snail/ReadReview/blob/master/MD/solr/solr.md)
   - [Solr集群](https://github.com/M78Snail/ReadReview/blob/master/MD/solr/solr_jiqun.md)
   - [ActiveMQ同步索引库](https://github.com/M78Snail/ReadReview/blob/master/MD/solr/activemq.md)
-- [分布式缓存设计](https://github.com/crossoverJie/JCSprout/blob/master/MD/Cache-design.md)
-- [分布式 ID 生成器](https://github.com/crossoverJie/JCSprout/blob/master/MD/ID-generator.md)
 
 ### SSM框架
 
@@ -80,43 +80,82 @@
 
 
 ### 网络
-- [秒杀系统设计](https://github.com/crossoverJie/JCSprout/blob/master/MD/Spike.md)
-- [秒杀架构实践](http://crossoverjie.top/2018/05/07/ssm/SSM18-seconds-kill/)
+- [OSI与TCP/IP各层的结构与功能](https://github.com/M78Snail/ReadReview/blob/master/MD/net/tcpip-yu-http/osiyu-tcp-ip-ge-ceng-de-jie-gou-yu-gong-neng-ff0c-du-you-na-xie-xie-yi.md)
+- [TCP三次握手与四次挥手过程](https://github.com/M78Snail/ReadReview/blob/master/MD/net/tcpde-san-ci-wo-shou-yu-si-ci-huishou-guo-cheng-ff0c-ge-ge-zhuang-tai-ming-cheng-yu-han-yi-ff0c-timewait-de-zuo-yong.md)
+- [TCP拥塞控制](https://github.com/M78Snail/ReadReview/blob/master/MD/net/tcpyong-sai-kong-zhi.md)
+- [TCP滑动窗口与回退N针协议](https://github.com/M78Snail/ReadReview/blob/master/MD/net/tcphua-dong-chuang-kou-yu-hui-tui-n-zhen-xie-yi.md)
+- [Http的状态码含义](https://github.com/M78Snail/ReadReview/blob/master/MD/net/tcphua-dong-chuang-kou-yu-hui-tui-n-zhen-xie-yi.md)
+- [IP地址分类](https://github.com/M78Snail/ReadReview/blob/master/MD/net/tcpip-yu-http/ipdi-zhi-fen-lei..md)
+- [OSI与TCP/IP各层的结构与功能](https://github.com/M78Snail/ReadReview/blob/master/MD/net/tcpip-yu-http/osiyu-tcp-ip-ge-ceng-de-jie-gou-yu-gong-neng-ff0c-du-you-na-xie-xie-yi.md)
 
 ### DB 相关
 
-- [MySQL 索引原理](https://github.com/crossoverJie/JCSprout/blob/master/MD/MySQL-Index.md)
-- [SQL 优化](https://github.com/crossoverJie/JCSprout/blob/master/MD/SQL-optimization.md)
 - Redis
   - [什么是Redis](https://github.com/M78Snail/ReadReview/blob/master/MD/redis/what_is_redis.md)
   - [Redis安装与使用](https://github.com/M78Snail/ReadReview/blob/master/MD/redis/redis_install_start.md)
   - [Redis的Jedis使用方法](https://github.com/M78Snail/ReadReview/blob/master/MD/redis/jedis.md)
 
 ### 数据结构与算法
-- [红包算法](https://github.com/crossoverJie/JCSprout/blob/master/src/main/java/com/crossoverjie/red/RedPacket.java)
-- [二叉树层序遍历](https://github.com/crossoverJie/JCSprout/blob/master/src/main/java/com/crossoverjie/algorithm/BinaryNode.java#L76-L101)
-- [是否为快乐数字](https://github.com/crossoverJie/JCSprout/blob/master/src/main/java/com/crossoverjie/algorithm/HappyNum.java#L38-L55)
-- [链表是否有环](https://github.com/crossoverJie/JCSprout/blob/master/src/main/java/com/crossoverjie/algorithm/LinkLoop.java#L32-L59)
-- [从一个数组中返回两个值相加等于目标值的下标](https://github.com/crossoverJie/JCSprout/blob/master/src/main/java/com/crossoverjie/algorithm/TwoSum.java#L38-L59)
-- [一致性 Hash 算法](https://github.com/crossoverJie/JCSprout/blob/master/MD/Consistent-Hash.md)
-- [限流算法](https://github.com/crossoverJie/JCSprout/blob/master/MD/Limiting.md)
-- [三种方式反向打印单向链表](https://github.com/crossoverJie/JCSprout/blob/master/src/main/java/com/crossoverjie/algorithm/ReverseNode.java)
-- [合并两个排好序的链表](https://github.com/crossoverJie/JCSprout/blob/master/src/main/java/com/crossoverjie/algorithm/MergeTwoSortedLists.java)
-- [两个栈实现队列](https://github.com/crossoverJie/JCSprout/blob/master/src/main/java/com/crossoverjie/algorithm/TwoStackQueue.java)
-- [动手实现一个 LRU cache](http://crossoverjie.top/2018/04/07/algorithm/LRU-cache/)
-- [链表排序](./src/main/java/com/crossoverjie/algorithm/LinkedListMergeSort.java)
-- [数组右移 k 次](./src/main/java/com/crossoverjie/algorithm/ArrayKShift.java)
 
-### 算法
-- [SpringBoot 整合长连接心跳机制](https://crossoverjie.top/2018/05/24/netty/Netty(1)TCP-Heartbeat/)
-- [从线程模型的角度看 Netty 为什么是高性能的？](https://crossoverjie.top/2018/07/04/netty/Netty(2)Thread-model/)
+- 数据结构
+  - [链表反转](https://github.com/M78Snail/ReadReview/blob/master/MD/algorithm/lian-biao-fan-zhuan.md)
+  - [Hash表的hash函数，冲突解决方法](https://github.com/M78Snail/ReadReview/blob/master/MD/algorithm/hashbiao-de-hash-han-shu-ff0c-chong-tu-jie-jue-fang-fa-you-na-xie.md)
+  - [树](https://github.com/M78Snail/ReadReview/blob/master/MD/algorithm/er-cha-shu-3001-b-shu-3001-avl-shu-3001-hong-hei-shu-3001-ha-fu-man-shu.md)
+  - [链表反转](https://github.com/M78Snail/ReadReview/blob/master/MD/algorithm/lian-biao-fan-zhuan.md)
+- 排序
+  - [冒泡排序](https://github.com/M78Snail/ReadReview/blob/master/MD/algorithm/mao-pao-pai-xu.md)
+  - [选择排序](https://github.com/M78Snail/ReadReview/blob/master/MD/algorithm/xuan-ze-pai-xu.md)
+  - [堆排序](https://github.com/M78Snail/ReadReview/blob/master/MD/algorithm/dui-pai-xu.md)
+  - [归并排序](https://github.com/M78Snail/ReadReview/blob/master/MD/algorithm/gui-bing-pai-xu.md)
+  - [希尔排序](https://github.com/M78Snail/ReadReview/blob/master/MD/algorithm/xi-er-pai-xu.md)
+  - [快速排序](https://github.com/M78Snail/ReadReview/blob/master/MD/algorithm/kuai-su-pai-xu.md)
+  - [桶排序](https://github.com/M78Snail/ReadReview/blob/master/MD/algorithm/tong-pai-xu.md)
+  - [基数排序](https://github.com/M78Snail/ReadReview/blob/master/MD/algorithm/ji-shu-pai-xu.md)
+  - [快排的partition函数与归并的Merge函数](https://github.com/M78Snail/ReadReview/blob/master/MD/algorithm/kuai-paide-partition-han-shu-yu-gui-bing-de-merge-han-shu.md)
+  - [对冒泡与快排的改进](https://github.com/M78Snail/ReadReview/blob/master/MD/algorithm/dui-mao-pao-yu-kuai-pai-de-gai-jin.md)
+- [二分查找与变种二分查找](https://github.com/M78Snail/ReadReview/blob/master/MD/algorithm/er-fen-cha-zhao-ff0c-yu-bian-zhong-er-fen-cha-zhao.md)
+- [二叉树的前中后续遍历](https://github.com/M78Snail/ReadReview/blob/master/MD/algorithm/er-cha-shu-de-qian-zhong-hou-xu-bian-li-ff1a-di-gui-yu-fei-di-gui-xie-fa-ff0c-ceng-xu-bian-li-suan-fa.md)
+- [图的BFS与DFS算法](https://github.com/M78Snail/ReadReview/blob/master/MD/algorithm/tu-de-bfsyu-dfs-suan-fa-ff0c-zui-xiao-sheng-cheng-shu-prim-suan-fa-yu-zui-duan-lu-jing-dijkstra-suan-fa.md)
+- [最小生成树prim算法](https://github.com/M78Snail/ReadReview/blob/master/MD/algorithm/zui-xiao-sheng-cheng-shu-prim-suan-fa.md)
+- [最短路径Dijkstra算法](https://github.com/M78Snail/ReadReview/blob/master/MD/algorithm/zui-duan-lu-jing-dijkstra-suan-fa.md)
+- [KMP算法](https://github.com/M78Snail/ReadReview/blob/master/MD/algorithm/kmpsuan-fa.md)
+- [动态规划，贪心算法，分治算法](https://github.com/M78Snail/ReadReview/blob/master/MD/algorithm/dong-tai-gui-hua-3001-tan-xin-suan-fa-3001-fen-zhi-suan-fa.md)
+- [大数据处理：10亿数据找出最大的1000个](https://github.com/M78Snail/ReadReview/blob/master/MD/algorithm/da-shu-ju-chu-li-ff1a-lei-si-10-yi-tiao-shu-ju-zhao-chu-zui-da-de-1000-ge-6570-deng-deng.md)
+
+### 大数据
+
+- [AI时代就业指南：Java 程序员如何转行做大数据？](aishi-dai-jiu-ye-zhi-nan-ff1a-java-cheng-xu-yuan-ru-he-zhuan-xing-zuo-da-shu-ju-ff1f.md)
+- [Hadoop](hadoop.md)
+  - [SSH免密码连接](hadoop/sshmian-mi-ma-lian-jie.md)
+  - [测试](hadoop/ce-shi.md)
+  - [HDFS分布式存储](hadoop/hdfsfen-bu-shi-cun-chu.md)
+    - [HDFS的可靠性](hadoop/hdfsfen-bu-shi-cun-chu/hdfsde-ke-kao-xing.md)
+    - [HDFS文件操作](hadoop/hdfsfen-bu-shi-cun-chu/hdfswen-jian-cao-zuo.md)
+    - [Hadoop2.x HDFS新特性](hadoop/hdfsfen-bu-shi-cun-chu/hadoop2x-hdfsxin-te-xing.md)
+  - [MapReduce](hadoop/mapreduce.md)
+    - [天气温度数据案例](hadoop/mapreduce/tian-qi-wen-du-shu-ju-an-li.md)
+    - 编程实战，日志分析
+  - [Hapoop在Eclipse上操作](hadoop/hapoopzai-eclipse-shang-cao-zuo.md)
+  - [Pig](hadoop/pig.md)
+  - [Hive](hadoop/hive.md)
+  - [应用开发实战](hadoop/ying-yong-kai-fa-shi-zhan.md)
+    - [巨型网站日志系统分析，提取KPI数据\(Map-Reduce\)](hadoop/ying-yong-kai-fa-shi-zhan/ju-xing-wang-zhan-ri-zhi-xi-tong-fen-xi-ff0c-ti-qu-kpi-shu-636e28-map-reduce.md)
+      - [使用MapReduce计算框架统计CDN日志IP数](hadoop/ying-yong-kai-fa-shi-zhan/ju-xing-wang-zhan-ri-zhi-xi-tong-fen-xi-ff0c-ti-qu-kpi-shu-636e28-map-reduce/shi-yong-mapreduce-ji-suan-kuang-jia-tong-ji-cdn-ri-zhi-ip-shu.md)
+      - [使用MapReduce计算框架统计CDN日志独立IP数](hadoop/hapoopzai-eclipse-shang-cao-zuo/shi-yong-mapreduce-ji-suan-kuang-jia-tong-ji-cdn-ri-zhi-du-li-ip-shu.md)
+      - [使用MapReduce计算框架统计CDN日志IP分配地区](hadoop/hapoopzai-eclipse-shang-cao-zuo/shi-yong-mapreduce-ji-suan-kuang-jia-tong-ji-cdn-ri-zhi-ip-fen-pei-di-qu.md)
+    - [电信运营商LBS应用，分析手机用户移动轨迹\(Map-Reduce\)](hadoop/ying-yong-kai-fa-shi-zhan/dian-xin-yun-ying-shang-lbs-ying-yong-ff0c-fen-xi-shou-ji-yong-hu-yi-dong-gui-8ff928-map-reduce.md)
+      - [BaseStationDataGenerator.py](hadoop/ying-yong-kai-fa-shi-zhan/dian-xin-yun-ying-shang-lbs-ying-yong-ff0c-fen-xi-shou-ji-yong-hu-yi-dong-gui-8ff928-map-reduce/basestationdatageneratorpy.md)
+      - [BaseStationDataPreprocess.java](hadoop/ying-yong-kai-fa-shi-zhan/dian-xin-yun-ying-shang-lbs-ying-yong-ff0c-fen-xi-shou-ji-yong-hu-yi-dong-gui-8ff928-map-reduce/basestationdatapreprocessjava.md)
+      - [TableLine.java](hadoop/ying-yong-kai-fa-shi-zhan/dian-xin-yun-ying-shang-lbs-ying-yong-ff0c-fen-xi-shou-ji-yong-hu-yi-dong-gui-8ff928-map-reduce/tablelinejava.md)
+    - [推荐系统](hadoop/ying-yong-kai-fa-shi-zhan/tui-jian-xi-tong.md)
+      - [模型一：建立物品的同现矩阵](hadoop/ying-yong-kai-fa-shi-zhan/tui-jian-xi-tong/mo-xing-yi-ff1a-jian-li-wu-pin-de-tong-xian-ju-zhen.md)
+      - [模型二：建立评分矩阵](hadoop/ying-yong-kai-fa-shi-zhan/tui-jian-xi-tong/mo-xing-er-ff1a-jian-li-ping-fen-ju-zhen.md)
+      - [合并矩阵，并计算推荐结果列表](hadoop/ying-yong-kai-fa-shi-zhan/tui-jian-xi-tong/he-bing-ju-zhen-ff0c-bing-ji-suan-tui-jian-jie-guo-lie-biao.md)
 
 ### 设计模式
 
-- [TCP/IP 协议](https://github.com/crossoverJie/JCSprout/blob/master/MD/TCP-IP.md)
-- [一个学渣的阿里之路](https://crossoverjie.top/2018/06/21/personal/Interview-experience/)
-- [如何成为一位「不那么差」的程序员](https://crossoverjie.top/2018/08/12/personal/how-to-be-developer/)
-- [如何高效的使用 Git](https://github.com/crossoverJie/JCSprout/blob/master/MD/additional-skills/how-to-use-git-efficiently.md)
+- [设计模式分类](https://github.com/M78Snail/ReadReview/blob/master/MD/design/she-ji-mo-shi.md)
+- [适配器VS装饰者VS桥接VS代理VS外观](https://github.com/M78Snail/ReadReview/blob/master/MD/design/she-ji-mo-shi.md)
 
 
 ### 环境配置
