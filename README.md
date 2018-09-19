@@ -15,6 +15,7 @@
 - [HashTable源码分析](https://github.com/M78Snail/ReadReview/blob/master/MD/collection/hashtableyuan-ma-fen-xi.md)
 - [ConcurrentHashMap源码分析](https://github.com/M78Snail/ReadReview/blob/master/MD/collection/concurrenthashmapyuan-ma-fen-xi.md)
 - [死锁](https://github.com/M78Snail/ReadReview/blob/master/MD/collection/si-suo.md)
+- [Java线程面试题合集](https://github.com/M78Snail/ReadReview/blob/master/MD/collection/java_thread.md)
 
 ### 操作系统
 - [进程和线程的区别](https://github.com/M78Snail/ReadReview/blob/master/MD/system/jin-cheng-he-xian-cheng-de-qu-bie.md)
@@ -155,6 +156,7 @@
 
 - [设计模式分类](https://github.com/M78Snail/ReadReview/blob/master/MD/design/she-ji-mo-shi.md)
 - [适配器VS装饰者VS桥接VS代理VS外观](https://github.com/M78Snail/ReadReview/blob/master/MD/design/she-ji-mo-shi.md)
+- [Java单例模式之双检锁深入思考](https://github.com/M78Snail/ReadReview/blob/master/MD/design/java_Singleton.md)
 
 
 ### 环境配置
