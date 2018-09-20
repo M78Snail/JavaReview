@@ -81,13 +81,13 @@
 
 
 ### 网络
-- [OSI与TCP/IP各层的结构与功能](https://github.com/M78Snail/ReadReview/blob/master/MD/net/tcpip-yu-http/osiyu-tcp-ip-ge-ceng-de-jie-gou-yu-gong-neng-ff0c-du-you-na-xie-xie-yi.md)
+- [OSI与TCP/IP各层的结构与功能](https://github.com/M78Snail/ReadReview/blob/master/MD/net/osiyu-tcp-ip-ge-ceng-de-jie-gou-yu-gong-neng-ff0c-du-you-na-xie-xie-yi.md)
 - [TCP三次握手与四次挥手过程](https://github.com/M78Snail/ReadReview/blob/master/MD/net/tcpde-san-ci-wo-shou-yu-si-ci-huishou-guo-cheng-ff0c-ge-ge-zhuang-tai-ming-cheng-yu-han-yi-ff0c-timewait-de-zuo-yong.md)
 - [TCP拥塞控制](https://github.com/M78Snail/ReadReview/blob/master/MD/net/tcpyong-sai-kong-zhi.md)
 - [TCP滑动窗口与回退N针协议](https://github.com/M78Snail/ReadReview/blob/master/MD/net/tcphua-dong-chuang-kou-yu-hui-tui-n-zhen-xie-yi.md)
 - [Http的状态码含义](https://github.com/M78Snail/ReadReview/blob/master/MD/net/tcphua-dong-chuang-kou-yu-hui-tui-n-zhen-xie-yi.md)
-- [IP地址分类](https://github.com/M78Snail/ReadReview/blob/master/MD/net/tcpip-yu-http/ipdi-zhi-fen-lei..md)
-- [OSI与TCP/IP各层的结构与功能](https://github.com/M78Snail/ReadReview/blob/master/MD/net/tcpip-yu-http/osiyu-tcp-ip-ge-ceng-de-jie-gou-yu-gong-neng-ff0c-du-you-na-xie-xie-yi.md)
+- [IP地址分类](https://github.com/M78Snail/ReadReview/blob/master/MD/net/ipdi-zhi-fen-lei..md)
+- [OSI与TCP/IP各层的结构与功能](https://github.com/M78Snail/ReadReview/blob/master/MD/net/osiyu-tcp-ip-ge-ceng-de-jie-gou-yu-gong-neng-ff0c-du-you-na-xie-xie-yi.md)
 
 ### DB 相关
 
