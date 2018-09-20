@@ -92,9 +92,16 @@
 ### DB 相关
 
 - Redis
-  - [什么是Redis](https://github.com/M78Snail/ReadReview/blob/master/MD/redis/what_is_redis.md)
-  - [Redis安装与使用](https://github.com/M78Snail/ReadReview/blob/master/MD/redis/redis_install_start.md)
-  - [Redis的Jedis使用方法](https://github.com/M78Snail/ReadReview/blob/master/MD/redis/jedis.md)
+  - [什么是Redis](https://github.com/M78Snail/ReadReview/blob/master/MD/db/redis/what_is_redis.md)
+  - [Redis安装与使用](https://github.com/M78Snail/ReadReview/blob/master/MD/db/redis/redis_install_start.md)
+  - [Redis的Jedis使用方法](https://github.com/M78Snail/ReadReview/blob/master/MD/db/redis/jedis.md)
+
+- MySQL
+  - [innodb和myisam存储引擎的区别 ](https://github.com/M78Snail/ReadReview/blob/master/MD/db/mysql/innodb_myisam.md)
+  - 索引
+    - [MySQL索引类型](https://github.com/M78Snail/ReadReview/blob/master/MD/db/mysql/index_category.md)
+    - [使用索引可能失效的场景](https://github.com/M78Snail/ReadReview/blob/master/MD/db/mysql/index_cannot.md)
+  - dw
 
 ### 数据结构与算法
 
