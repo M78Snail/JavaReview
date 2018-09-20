@@ -61,6 +61,6 @@
 1. 防止上一次连接中的包，迷路后重新出现，影响新连接（经过2MSL，上一次连接中所有的重复包都会消失）
 2. 可靠的关闭TCP连接，在主动关闭方发送的最后一个ACK\(fin\),有可能丢失,这时被动方会重新发fin,如果这时主动方处于CLOSED状态,就会响应rst而不是ACK。所以主动方要处于TIME\_WAIT状态，而不能是CLOSED。TIME\_WAIT并不会占用很大资源，除非受到攻击。还有，如果任何一方send或recv超时，就会直接进入CLOSED状态。
 
-![](/assets/import741.png) 
+![](https://github.com/M78Snail/JavaReview/blob/master/MD/net/assets/import741.png) 
 
 
