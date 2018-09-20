@@ -101,7 +101,6 @@
   - 索引
     - [MySQL索引类型](https://github.com/M78Snail/ReadReview/blob/master/MD/db/mysql/index_category.md)
     - [使用索引可能失效的场景](https://github.com/M78Snail/ReadReview/blob/master/MD/db/mysql/index_cannot.md)
-  - dw
 
 ### 数据结构与算法
 
