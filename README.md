@@ -46,7 +46,7 @@
   - [Solr集群](https://github.com/M78Snail/ReadReview/blob/master/MD/solr/solr_jiqun.md)
   - [ActiveMQ同步索引库](https://github.com/M78Snail/ReadReview/blob/master/MD/solr/activemq.md)
 
-### web框架
+### Web框架
 
 - SpringMVC
   - [SpringMVC配置](https://github.com/M78Snail/ReadReview/blob/master/MD/springmvc/springmvc.md)
