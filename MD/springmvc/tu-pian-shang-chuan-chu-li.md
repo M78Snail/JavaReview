@@ -14,13 +14,13 @@
 
 * 通过eclipse配置
 
-![](/assets/importsmvc8.1.png)
+![](https://github.com/M78Snail/JavaReview/blob/master/MD/springmvc/assets/importsmvc8.1.png)
 
 ### 2\)导入fileupload的jar包
 
 CommonsMultipartResolver解析器依赖commons-fileupload和commons-io，加入如下jar包：
 
-![](/assets/importsmvc8.2.png)
+![](https://github.com/M78Snail/JavaReview/blob/master/MD/springmvc/assets/importsmvc8.2.png)
 
 
 

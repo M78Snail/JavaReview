@@ -7,15 +7,14 @@
 1.设置核心分发器
 
 ```css
-	<servlet>
-		<servlet-name>springMvc</servlet-name>
-		<servlet-class>org.springframework.web.servlet.DispatcherServlet.class</servlet-class>
-	</servlet>
-
-	<servlet-mapping>
-		<servlet-name>springMvc</servlet-name>
-		<url-pattern>*.action</url-pattern>
-	</servlet-mapping>
+<servlet>
+	<servlet-name>springMvc</servlet-name>
+	<servlet-class>org.springframework.web.servlet.DispatcherServlet.class</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>springMvc</servlet-name>
+	<url-pattern>*.action</url-pattern>
+</servlet-mapping>
 ```
 
 2.设置核心配置文件
@@ -87,4 +86,4 @@ public class ItemsController {
 }
 ```
 
-![](/assets/importspringmvc1.png)
+![](https://github.com/M78Snail/JavaReview/blob/master/MD/springmvc/assets/importspringmvc1.png)

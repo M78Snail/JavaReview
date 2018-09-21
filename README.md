@@ -5,7 +5,7 @@
 
 | 📊 |⚔️ | 🖥 | 🚏 | 🏖  | 🌁| 📮 | 🔍 | 🚀 | 🌈 |💡
 | :--------: | :---------: | :---------: | :---------: | :---------: | :---------:| :---------: | :-------: | :-------:| :------:|:------:|
-| [集合](#常用集合) | [操作系统](#操作系统)|[JVM](#jvm) | [分布式](#分布式相关) |[SSM框架](#ssm框架) |[网络](#网络)| [数据库](#db-相关) |[算法](#数据结构与算法)|[大数据](#大数据)| [设计模式](#设计模式)|[环境配置](#环境配置) |
+| [集合](#常用集合) | [操作系统](#操作系统)|[JVM](#jvm) | [分布式](#分布式相关) |[Web框架](#框架) |[网络](#网络)| [数据库](#db-相关) |[算法](#数据结构与算法)|[大数据](#大数据)| [设计模式](#设计模式)|[环境配置](#环境配置) |
 
 
 
@@ -46,7 +46,7 @@
   - [Solr集群](https://github.com/M78Snail/ReadReview/blob/master/MD/solr/solr_jiqun.md)
   - [ActiveMQ同步索引库](https://github.com/M78Snail/ReadReview/blob/master/MD/solr/activemq.md)
 
-### SSM框架
+### Web框架
 
 - SpringMVC
   - [SpringMVC配置](https://github.com/M78Snail/ReadReview/blob/master/MD/springmvc/springmvc.md)
@@ -78,6 +78,12 @@
   - [6、关联查询](https://github.com/M78Snail/ReadReview/blob/master/MD/mybatis/63001-guan-lian-cha-xun.md)
   - [7、Mybatis整合spring](https://github.com/M78Snail/ReadReview/blob/master/MD/mybatis/7mybatiszheng-he-spring.md)
 - [整合SSM](https://github.com/M78Snail/ReadReview/blob/master/MD/ssm/zheng-he-ssm.md)
+- Struts2
+  - [Struts2入门配置](https://github.com/M78Snail/ReadReview/blob/master/MD/struts2/struts_init.md)
+  - [Struts2框架配置文件加载的顺序](https://github.com/M78Snail/ReadReview/blob/master/MD/struts2/struts_config.md)
+  - [Action的三种访问](https://github.com/M78Snail/ReadReview/blob/master/MD/struts2/struts_action.md)
+  - [Struts2框架的数据封装](https://github.com/M78Snail/ReadReview/blob/master/MD/struts2/struts_request.md)
+  - [自定义拦截器和配置](https://github.com/M78Snail/ReadReview/blob/master/MD/struts2/struts_interceptor.md)
 
 
 ### 网络
