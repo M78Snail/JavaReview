@@ -84,6 +84,8 @@
   - [Action的三种访问](https://github.com/M78Snail/ReadReview/blob/master/MD/struts2/struts_action.md)
   - [Struts2框架的数据封装](https://github.com/M78Snail/ReadReview/blob/master/MD/struts2/struts_request.md)
   - [自定义拦截器和配置](https://github.com/M78Snail/ReadReview/blob/master/MD/struts2/struts_interceptor.md)
+- Hibernate
+  - [Hibernate框架的快速入门](https://github.com/M78Snail/ReadReview/blob/master/MD/hibernate/hibernate_init.md)
 
 
 ### 网络
