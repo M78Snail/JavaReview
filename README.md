@@ -86,6 +86,13 @@
   - [自定义拦截器和配置](https://github.com/M78Snail/ReadReview/blob/master/MD/struts2/struts_interceptor.md)
 - Hibernate
   - [Hibernate框架的快速入门](https://github.com/M78Snail/ReadReview/blob/master/MD/hibernate/hibernate_init.md)
+  - [Hibernate的一级缓存](https://github.com/M78Snail/ReadReview/blob/master/MD/hibernate/hibernate_cache.md)
+  - [Hibernate中的事务与并发](https://github.com/M78Snail/ReadReview/blob/master/MD/hibernate/hibernate_transaction.md)
+  - 查询
+    - [HQL方式](https://github.com/M78Snail/ReadReview/blob/master/MD/hibernate/hibernate_hql.md)
+    - [QBC检索方式](https://github.com/M78Snail/ReadReview/blob/master/MD/hibernate/hibernate_qbc.md)
+    - [查询功能优化](https://github.com/M78Snail/ReadReview/blob/master/MD/hibernate/hibernate_optimize.md)
+  - [Hibernate关联关系映射](https://github.com/M78Snail/ReadReview/blob/master/MD/hibernate/hibernate_relation.md)
 
 
 ### 网络
