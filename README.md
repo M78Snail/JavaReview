@@ -64,6 +64,7 @@
   - [Spring框架中标签的配置](https://github.com/M78Snail/ReadReview/blob/master/MD/spring/springkuang-jia-4e2d3c-bean-biao-qian-de-pei-zhi.md)
   - [依赖注入-- 配置文件方式](https://github.com/M78Snail/ReadReview/blob/master/MD/spring/yi-lai-zhu-ru.md)
   - [依赖注入-- 注解方式](https://github.com/M78Snail/ReadReview/blob/master/MD/spring/yi-lai-zhu-5165-zhu-jie-fang-shi.md)
+  - [AOP那点事](https://github.com/M78Snail/ReadReview/blob/master/MD/spring/aop_thing.md)
   - [AOP（XML方式）](https://github.com/M78Snail/ReadReview/blob/master/MD/spring/aop.md)
   - [AOP（注解方式）](https://github.com/M78Snail/ReadReview/blob/master/MD/spring/aopff08-zhu-jie-fang-shi-ff09.md)
   - [JDBC](https://github.com/M78Snail/ReadReview/blob/master/MD/spring/jdbc.md)
@@ -87,6 +88,7 @@
 - Hibernate
   - [Hibernate框架的快速入门](https://github.com/M78Snail/ReadReview/blob/master/MD/hibernate/hibernate_init.md)
   - [Hibernate的一级缓存](https://github.com/M78Snail/ReadReview/blob/master/MD/hibernate/hibernate_cache.md)
+  - [Hibernate的主键生成策略](https://github.com/M78Snail/ReadReview/blob/master/MD/hibernate/hibernate_id.md)
   - [Hibernate中的事务与并发](https://github.com/M78Snail/ReadReview/blob/master/MD/hibernate/hibernate_transaction.md)
   - 查询
     - [HQL方式](https://github.com/M78Snail/ReadReview/blob/master/MD/hibernate/hibernate_hql.md)

@@ -1,8 +1,6 @@
 JVM的类加载是通过类加载器实现的， Java中的类加载器体系结构如下：
 
-| ![](/assets/import2.9.1.png) |
-| :---: |
-
+ ![](https://github.com/M78Snail/JavaReview/blob/master/MD/jvm/assets/import2.9.1.png) 
 
 * 启动类加载器（Bootstrap ClassLoader）：是用本地代码实现的类装入器，它负责将/lib下面的类库加载到内存中（比如rt.jar）。由于引导类加载器涉及到虚拟机本地实现细节，开发者无法直接获取到启动类加载器的引用，所以不允许直接通过引用进行操作
 
