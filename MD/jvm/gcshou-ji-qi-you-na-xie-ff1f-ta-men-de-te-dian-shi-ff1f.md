@@ -1,30 +1,25 @@
 常见的GC收集器如下图所示，连线代表可搭配使用：
 
-| ![](/assets/import2.6.1.png) |
-| :---: |
-
+![](https://github.com/M78Snail/JavaReview/blob/master/MD/jvm/assets/import2.6.1.png) 
 
 **1.Serial收集器（串行收集器）**
 
 用于新生代的单线程收集器，收集时需要暂停所有工作线程（Stop the world）。优点在于：简单高效，单个CPU时没有线程交互的开销，堆较小时停顿时间不长。常与Serial Old 收集器一起使用，示意图如下所示：
 
-| ![](/assets/import2.6.2.png) |
-| :---: |
+| ![](https://github.com/M78Snail/JavaReview/blob/master/MD/jvm/assets/import2.6.2.png) 
 
 
 **2.ParNew收集器（parallel new 收集器，新生代并行收集器）**
 
 Serial收集器多线程版本，除了使用多线程外和Serial收集器一模一样。常与Serial Old 收集器一起使用，示意图如下：
 
-| ![](/assets/import2.6.3.png) |
-| :---: |
-
+![](https://github.com/M78Snail/JavaReview/blob/master/MD/jvm/assets/import2.6.3.png) 
 
 **3.Parallel Scavenge收集器**
 
 与ParNew收集器一样是一款多线程收集器，其特点在于关注点与别的GC收集器不同：一般的GC收集器关注于缩短工作线程暂停的时间，而该收集器关注于吞吐量，因此也被称为吞吐量优先收集器。（吞吐量 = 用户运行代码时间 / \(用户运行代码时间 + 垃圾回收时间\)）高吞吐量与停顿时间短相比主要强调任务快完成，因此常和Parallel Old 收集器一起使用（没有Parallel Old之前与Serial Old一起使用），示意图如下：
 
-| ![](/assets/import2.6.4.png) |
+| ![](https://github.com/M78Snail/JavaReview/blob/master/MD/jvm/assets/import2.6.4.png) |
 | :---: |
 
 
@@ -37,7 +32,7 @@ Serial收集器的年老代版本，不在赘述。
 **6.CMS收集器（Concurrent Mark Sweep，并发标记清除收集器）**  
 CMS收集器是一个年老代的收集器，是以最短回收停顿时间为目标的收集器，其示意图如下所示：
 
-| ![](/assets/import2.6.5.png) |
+| ![](https://github.com/M78Snail/JavaReview/blob/master/MD/jvm/assets/import2.6.5.png) |
 | :---: |
 
 

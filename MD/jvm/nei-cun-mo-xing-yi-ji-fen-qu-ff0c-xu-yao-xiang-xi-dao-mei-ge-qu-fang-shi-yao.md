@@ -1,6 +1,6 @@
 JVM内存模型如下图所示:
 
-![](../assets/jvm/import2.1.png) 
+![](https://github.com/M78Snail/JavaReview/blob/master/MD/jvm/assets/import2.1.png) 
 
 此处我们集中注意中间绿色的部分，该部分为JVM的运行时内存，该部分包含了：  
 **线程私有的（灰色）：**
