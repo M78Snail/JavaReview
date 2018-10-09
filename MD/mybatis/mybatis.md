@@ -4,7 +4,7 @@ MyBatis是一个优秀的持久层框架，它对jdbc的操作数据库的过程
 
 Mybatis通过xml或注解的方式将要执行的各种statement（statement、preparedStatement、CallableStatement）配置起来，并通过java对象和statement中的sql进行映射生成最终执行的sql语句，最后由mybatis框架执行sql并将结果映射成java对象并返回。
 
-## 使用jdbc编程问题总结
+## 使用JDBC编程问题总结
 
 ```java
     Connection connection = null;
@@ -68,7 +68,7 @@ Mybatis通过xml或注解的方式将要执行的各种statement（statement、p
 
 ## Mybatis架构
 
-![](../assets/importmb0.png)
+![](https://github.com/M78Snail/JavaReview/blob/master/MD/mybatis/assets/importmb0.png)
 
 1、  mybatis配置  
 SqlMapConfig.xml，此文件作为mybatis的全局配置文件，配置了mybatis的运行环境等信息。  

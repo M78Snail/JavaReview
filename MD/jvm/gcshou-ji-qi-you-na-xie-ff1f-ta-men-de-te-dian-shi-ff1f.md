@@ -8,7 +8,7 @@
 
 用于新生代的单线程收集器，收集时需要暂停所有工作线程（Stop the world）。优点在于：简单高效，单个CPU时没有线程交互的开销，堆较小时停顿时间不长。常与Serial Old 收集器一起使用，示意图如下所示：
 
-| ![](https://github.com/M78Snail/JavaReview/blob/master/MD/jvm/assets/import2.6.2.png) 
+![](https://github.com/M78Snail/JavaReview/blob/master/MD/jvm/assets/import2.6.2.png) 
 
 ### *2.ParNew收集器（parallel new 收集器，新生代并行收集器）*
 

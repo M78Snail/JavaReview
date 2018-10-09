@@ -84,17 +84,20 @@
         ```
 
 5. 聚合函数查询（Projection的聚合函数的接口，而Projections是Hibernate提供的工具类，使用该工具类设置聚合函数查询）
+
           * 使用QBC的聚合函数查询，需要使用criteria.setProjection()方法
 
           * 具体的代码如下
 
-               ```
-               Session session = HibernateUtils.getCurrentSession();
-               Transaction tr = session.beginTransaction();
-               Criteria criteria = session.createCriteria(Linkman.class);
-               criteria.setProjection(Projections.rowCount());
-               List<Number> list = criteria.list();
-               Long count = list.get(0).longValue();
-               System.out.println(count);
-               tr.commit();
-               ```
+            ```
+            Session session = HibernateUtils.getCurrentSession();
+            Transaction tr = session.beginTransaction();
+            Criteria criteria = session.createCriteria(Linkman.class);
+            criteria.setProjection(Projections.rowCount());
+            List<Number> list = criteria.list();
+            Long count = list.get(0).longValue();
+            System.out.println(count);
+            tr.commit();
+            ```
+
+
