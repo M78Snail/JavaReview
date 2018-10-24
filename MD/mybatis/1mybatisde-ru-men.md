@@ -1,4 +1,4 @@
-## 1、Mybatis的入门
+# 1、Mybatis的入门
 
 ## Ⅰ. SqlMapConfig.xml
 
@@ -69,7 +69,6 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 
 <mapper namespace="com.zjipst.mapper.User">
 
-
     <select id="findUserById" parameterType="int" resultType="com.zjipst.pojo.User">
         select * from user where id=#{id}
     </select>
@@ -77,6 +76,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
      <select id="findUserByUserName" parameterType="string" resultType="com.zjipst.pojo.User">
          select * from user where username like '%${value}%' 
      </select>
+     
 </mapper>
 ```
 

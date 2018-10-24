@@ -11,7 +11,6 @@
 
 ### 常用集合
 - [HashMap源码分析及面试题解答](https://github.com/M78Snail/ReadReview/blob/master/MD/collection/hashmapyuan-ma-fen-xi-ji-mian-shi-ti-jie-da.md)
-- [HashSet源码分析](https://github.com/M78Snail/ReadReview/blob/master/MD/collection/javaji-chu.md)
 - [HashTable源码分析](https://github.com/M78Snail/ReadReview/blob/master/MD/collection/hashtableyuan-ma-fen-xi.md)
 - [ConcurrentHashMap源码分析](https://github.com/M78Snail/ReadReview/blob/master/MD/collection/concurrenthashmapyuan-ma-fen-xi.md)
 - [死锁](https://github.com/M78Snail/ReadReview/blob/master/MD/collection/si-suo.md)

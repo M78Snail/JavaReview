@@ -1,4 +1,4 @@
-## 3、SqlMapConfig.xml文件说明
+# 3、SqlMapConfig.xml文件说明
 
 ## properties
 

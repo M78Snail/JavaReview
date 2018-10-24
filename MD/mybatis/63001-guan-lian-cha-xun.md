@@ -64,8 +64,19 @@ public class CustomOrders extends Orders {
 > association
 
 * property:指定将数据放入Orders中的user属性中
-
 * javaType:user属性的类型
+
+```
+public class Orders {
+    private Integer id ;
+    private Integer userId ;
+    private String number ;
+    private Date createtime ;
+    private String note ;
+    private User user ;
+    ...
+}
+```
 
 ```java
 <resultMap type="Orders" id="orderAndUserResultMap">
