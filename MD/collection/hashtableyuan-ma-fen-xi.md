@@ -1,4 +1,4 @@
-## 一、什么是HashTable {#一、什么是HashTable}
+## 一、什么是HashTable 
 
 1. HashTable是基于哈希表的Map接口的同步实现
 2. HashTable中元素的key是唯一的，value值可重复
@@ -16,7 +16,7 @@ HashTable跟HashMap一样，同样是链表散列的数据结构，从源码中�
 1. Dictionary类是任何可将键映射到相应值的类的抽象父类，每个键和值都是对象
 2. Dictionary源码注释指出 Dictionary 这个类过时了，新的实现类应该实现Map接口
 
-## 二、Hashtable成员变量 {#二、Hashtable成员变量}
+## 二、Hashtable成员变量
 
 1. table：一个Entry\[\]数组类型，而Entry（在 HashMap 中有讲解过）就是一个单向链表。哈希表的”key-value键值对”都是存储在Entry数组中的
 2. count：Hashtable的大小，它是Hashtable保存的键值对的数量
@@ -24,7 +24,7 @@ HashTable跟HashMap一样，同样是链表散列的数据结构，从源码中�
 4. loadFactor：负载因子
 5. modCount：用来实现fail-fast机制的
 
-## 三、Hashtable构造方法 {#三、Hashtable构造方法}
+## 三、Hashtable构造方法 
 
 Hashtable 一共提供了 4 个构造方法
 
@@ -33,7 +33,7 @@ Hashtable 一共提供了 4 个构造方法
 3. public Hashtable\(\)：默认构造函数，容量为 11，加载因子为 0.75
 4. public Hashtable\(Map&lt;? extends K, ? extends V&gt;t\)：构造一个与给定的Map具有相同映射关系的新哈希表
 
-## 四、Hashtable的存储 {#四、Hashtable的存储}
+## 四、Hashtable的存储 
 
 ```
 public synchronized V put(K key, V value) {
@@ -101,7 +101,7 @@ public synchronized V get(Object key) {
 2. 根据hash值得到index索引
 3. 迭代链表，返回匹配的key的对应的value，找不到则返回null
 
-## 六、Hashtable遍历方式 {#六、Hashtable遍历方式}
+## 六、Hashtable遍历方式 
 
 Hashtable有4种遍历方式：
 
@@ -128,7 +128,7 @@ Iterator<Entry<String, String>> it2 = table.entrySet().iterator();
 }
 ```
 
-## 七、Hashtable与HashMap的区别 {#七、Hashtable与HashMap的区别}
+## 七、Hashtable与HashMap的区别 
 
 | HashTable | HashMap |
 | :---: | :---: |
@@ -137,7 +137,7 @@ Iterator<Entry<String, String>> it2 = table.entrySet().iterator();
 | key和value都不允许为null，遇到null，直接返回 NullPointerException | key和value都允许为null，遇到key为null的时候，调用putForNullKey方法进行处理，而对value没有处理 |
 | hash数组默认大小是11，扩充方式是old\*2+1 | hash数组的默认大小是16，而且一定是2的指数 |
 
-## 八、多线程存在的问题 {#八、多线程存在的问题}
+## 八、多线程存在的问题 
 
 1. 如果涉及到多线程同步时，建议采用HashTable
 2. 没有涉及到多线程同步时，建议采用HashMap

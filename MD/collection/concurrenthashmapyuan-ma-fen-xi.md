@@ -1,11 +1,11 @@
-## 一、什么是ConcurrentHashMap {#一、什么是ConcurrentHashMap}
+## 一、什么是ConcurrentHashMap 
 
 1. ConcurrentHashMap基于双数组和链表的Map接口的同步实现
 2. ConcurrentHashMap中元素的key是唯一的、value值可重复
 3. ConcurrentHashMap不允许使用null值和null键
 4. ConcurrentHashMap是无序的
 
-## 二、为什么使用ConcurrentHashMap {#二、为什么使用ConcurrentHashMap}
+## 二、为什么使用ConcurrentHashMap 
 
 我们在之前的博文中了解到关于HashMap和Hashtable这两种集合，HashMap是非线程安全的，当我们只有一个线程在使用HashMap的时候，自然不会有问题，但如果涉及到多个线程，并且有读有写的过程中，HashMap就会fail-fast。要解决HashMap同步的问题，我们的解决方案有
 
@@ -14,15 +14,15 @@
 
 这两种方式基本都是对整个hash表结构加上同步锁，这样在锁表的期间，别的线程就需要等待了，无疑性能不高，所以我们引入ConcurrentHashMap，既能同步又能多线程访问
 
-## 三、ConcurrentHashMap的数据结构 {#三、ConcurrentHashMap的数据结构}
+## 三、ConcurrentHashMap的数据结构 
 
 ConcurrentHashMap的数据结构为一个Segment数组，Segment的数据结构为HashEntry的数组，而HashEntry存的是我们的键值对，可以构成链表。可以简单的理解为数组里装的是HashMap
 
-![](/assets/import_conhashmap.png)
+![](https://github.com/M78Snail/JavaReview/blob/master/MD/collection/assets/import_conhashmap.png)
 
 从上面的结构我们可以了解到，ConcurrentHashMap定位一个元素的过程需要进行两次Hash操作，第一次Hash定位到Segment，第二次Hash定位到元素所在的链表的头部，因此，这一种结构的带来的副作用是Hash的过程要比普通的HashMap要长，但是带来的好处是写操作的时候可以只对元素所在的Segment进行加锁即可，不会影响到其他的Segment。正是因为其内部的结构以及机制，ConcurrentHashMap在并发访问的性能上要比Hashtable和同步包装之后的HashMap的性能提高很多。在理想状态下，ConcurrentHashMap 可以支持 16 个线程执行并发写操作（如果并发级别设置为 16），及任意数量线程的读操作
 
-## 四、ConcurrentHashMap的成员变量 {#四、ConcurrentHashMap的成员变量}
+## 四、ConcurrentHashMap的成员变量
 
 ConcurrentHashMap的成员变量有
 
@@ -76,7 +76,7 @@ static final class HashEntry<K,V> {
 1. 除了value以外，其他几个变量都是final的，这样做为了防止链表结构被破坏，出现ConcurrentModification的情况。
 2. next域被final修饰，说明每次往链表添加元素时，只能添加在链头，这样next才能不够被修改
 
-## 五、ConcurrentHashMap的存储 {#五、ConcurrentHashMap的存储}
+## 五、ConcurrentHashMap的存储 
 
 在ConcurrentHashMap中，当执行put方法的时候，会需要加锁来完成，且ConcurrentHashMap不允许空值
 
@@ -150,7 +150,7 @@ final V put(K key, int hash, V value, boolean onlyIfAbsent) {
 
 加锁操作是针对的 hash 值对应的某个Segment，而不是整个ConcurrentHashMap，因为put操作只是在这个Segment中完成，所以并不需要对整个ConcurrentHashMap加锁。此时，其他的线程也可以对另外的Segment进行put操作，因为虽然该Segment被锁住了，但其他的Segment并没有加锁。
 
-## 六、ConcurrentHashMap的读取 {#六、ConcurrentHashMap的读取}
+## 六、ConcurrentHashMap的读取 
 
 ConcurrentHashMap中的读方法不需要加锁，所有的修改操作在进行结构修改时都会在最后一步写count 变量，通过这种机制保证get操作能够得到几乎最新的结构更新
 
@@ -179,7 +179,7 @@ ConcurrentHashMap 的高并发性主要来自于三个方面：
 2. 用HashEntery对象的不变性来降低执行读操作的线程在遍历链表期间对加锁的需求
 3. 通过对同一个Volatile变量的写 / 读访问，协调不同线程间读 / 写操作的内存可见性
 
-## 七、ConcurrentHashMap与HashTable最大的区别 {#七、ConcurrentHashMap与HashTable最大的区别}
+## 七、ConcurrentHashMap与HashTable最大的区别 
 
 ![](/assets/import_table_hash.png)
 
