@@ -117,6 +117,9 @@
   - 索引
     - [MySQL索引类型](https://github.com/M78Snail/ReadReview/blob/master/MD/db/mysql/index_category.md)
     - [使用索引可能失效的场景](https://github.com/M78Snail/ReadReview/blob/master/MD/db/mysql/index_cannot.md)
+    - [MySQL索引实现](https://github.com/M78Snail/ReadReview/blob/master/MD/db/mysql/mysql_index.md)
+  - [数据库隔离级别 脏读 幻读 ACID mysql的隔离级别](https://github.com/M78Snail/ReadReview/blob/master/MD/db/mysql/isolation.md)
+  - [谈谈SQL慢查询的解决思路](https://github.com/M78Snail/ReadReview/blob/master/MD/db/mysql/slow_query.md)
 
 ### 数据结构与算法
 
@@ -184,3 +187,7 @@
 ### 环境配置
 
 - [Linux开发环境](https://github.com/M78Snail/ReadReview/blob/master/MD/setting/linux.md)
+
+### 面试题
+
+- [阿里巴巴的最新面试题目：基础+高级+架构](https://github.com/M78Snail/ReadReview/blob/master/MD/interview/ali01.md)

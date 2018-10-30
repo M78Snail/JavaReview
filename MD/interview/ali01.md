@@ -10,7 +10,13 @@
 
 ### 4. 数据库隔离级别 脏读 幻读 ACID mysql的隔离级别
 
+	[数据库隔离级别 脏读 幻读 ACID mysql的隔离级别](https://github.com/M78Snail/ReadReview/blob/master/MD/db/mysql/isolation.md)
+
 ### 5. MySQL索引实现，如何解决慢查询
+
+	[MySQL索引实现](https://github.com/M78Snail/ReadReview/blob/master/MD/db/mysql/mysql_index.md)
+
+	[谈谈SQL慢查询的解决思路](https://github.com/M78Snail/ReadReview/blob/master/MD/db/mysql/slow_query.md)
 
 ### 6. 数据库锁是怎么实现的
 
