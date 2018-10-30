@@ -22,7 +22,15 @@
 
 ### 7. 死锁的条件，进程和线程区别
 
-### 8. tcp/ip模型，tcp和udp区别
+[死锁](https://github.com/M78Snail/ReadReview/blob/master/MD/collection/si-suo.md)
+
+[进程和线程的区别](https://github.com/M78Snail/ReadReview/blob/master/MD/system/jin-cheng-he-xian-cheng-de-qu-bie.md)
+
+### 8. tcp/ip模型,TCP和UDP的区别？
+
+[OSI与TCP/IP各层的结构与功能](https://github.com/M78Snail/ReadReview/blob/master/MD/net/osiyu-tcp-ip-ge-ceng-de-jie-gou-yu-gong-neng-ff0c-du-you-na-xie-xie-yi.md)
+
+[TCP和UDP的区别](https://github.com/M78Snail/ReadReview/blob/master/MD/net/tcpyuudp-de-qu-bie.md)
 
 ### 9. Linux查看网络 内存 日志命令
 
@@ -38,7 +46,11 @@
 
 ### 15. 10万个URL去重
 
-### 16. TCP的状态？TCP和UDP的区别？TIME_WAIT
+### 16. TCP的状态？TIME_WAIT
+
+[TCP三次握手过程](https://github.com/M78Snail/JavaReview/blob/master/MD/net/tcpde-san-ci-wo-shou-yu-si-ci-huishou-guo-cheng-ff0c-ge-ge-zhuang-tai-ming-cheng-yu-han-yi-ff0c-timewait-de-zuo-yong.md)
+
+[是不是所有执行主动关闭的socket都会进入TIME_WAIT状态呢？](https://github.com/M78Snail/JavaReview/blob/master/MD/net/tcpde-san-ci-wo-shou-yu-si-ci-huishou-guo-cheng-ff0c-ge-ge-zhuang-tai-ming-cheng-yu-han-yi-ff0c-timewait-de-zuo-yong.md#是不是所有执行主动关闭的socket都会进入time_wait状态呢)
 
 ## **二面**
 
