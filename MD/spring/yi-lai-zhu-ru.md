@@ -66,7 +66,7 @@ public class CustomerServiceImpl {
 <bean id="customerDao" class="com.zjipst.demo.CustomerDaoImpl" />
 
 <bean id="customerService" class="com.zjipst.demo.CustomerServiceImpl">
-<property name="customerDao" ref="customerDao" />
+	<property name="customerDao" ref="customerDao" />
 </bean>
 ```
 
@@ -119,8 +119,10 @@ public class Person {
 ```java
 <!-- 演示的构造方法的注入的方式 -->
 <bean id="car1" class="com.zjipst.demo.Car1">
-    <!-- <constructor-arg name="cname" value="奇瑞QQ"/> <constructor-arg name="price" 
-        value="25000"/> -->
+    <!-- 
+    <constructor-arg name="cname" value="奇瑞QQ"/> 
+    <constructor-arg name="price" value="25000"/> 
+    -->
 
     <constructor-arg index="0" value="囚车" />
     <constructor-arg index="1" value="545000" />

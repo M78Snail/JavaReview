@@ -1,4 +1,6 @@
-&lt;bean&gt;
+# Spring框架中标签的配置
+
+### <bean>
 
 ```java
 <?xml version="1.0" encoding="UTF-8"?>
@@ -23,7 +25,7 @@
 
    ```
    取值要求：name:出现特殊字符.如果&lt;bean&gt;没有id的话 , name可以当做id使用
-
+   
    Spring框架在整合Struts1的框架的时候，Struts1的框架的访问路径是以/开头的，例如：/bookAction
    ```
 
@@ -49,13 +51,11 @@
 
    * destroy-method    -- 当bean从容器中删除的时候调用destroy-method属性指定的方法
 
-   ```
-    想查看destroy-method的效果，有如下条件
+     想查看destroy-method的效果，有如下条件
 
-    scope= singleton有效
+     scope= singleton有效，web容器中会自动调用，但是main函数或测试用例需要手动调用（需要使用ClassPathXmlApplicationContext的close\(\)方法）
 
-    web容器中会自动调用，但是main函数或测试用例需要手动调用（需要使用ClassPathXmlApplicationContext的close\(\)方法）
-   ```
+    
 
 
 
