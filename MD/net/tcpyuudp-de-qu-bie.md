@@ -1,4 +1,4 @@
-## TCP与UDP的区别 {#toc_3}
+## TCP与UDP的区别
 
 下面我们主要从连接性(Connectivity)、可靠性(Reliability)、有序性(Ordering)、有界性(Boundary)、拥塞控制(Congestion or Flow control)、传输速度(Speed)、量级(Heavy/Light weight)、头部大小(Header size)等8个方面来对比它们：
 

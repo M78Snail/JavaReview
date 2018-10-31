@@ -24,6 +24,7 @@
 - [IPC几种通信方式](https://github.com/M78Snail/ReadReview/blob/master/MD/system/ipc-ji-zhong-tong-xin-fang-shi.md)
 - [什么是虚拟内存](https://github.com/M78Snail/ReadReview/blob/master/MD/system/shi-yao-shi-xu-ni-nei-cun.md)
 - [虚拟地址，逻辑地址，线性地址，物理地址的区别](https://github.com/M78Snail/ReadReview/blob/master/MD/system/xu-ni-di-zhi-3001-luo-ji-di-zhi-3001-xian-xing-di-zhi-3001-wu-li-di-zhi-de-qu-bie.md)
+- [Linux查看网络 内存 日志命令](https://github.com/M78Snail/ReadReview/blob/master/MD/system/linux_ping.md)
 
 ### JVM
 - [内存模型以及分区](https://github.com/M78Snail/ReadReview/blob/master/MD/jvm/nei-cun-mo-xing-yi-ji-fen-qu-ff0c-xu-yao-xiang-xi-dao-mei-ge-qu-fang-shi-yao.md)
