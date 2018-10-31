@@ -5,7 +5,7 @@
 
 | 📊 |⚔️ | 🖥 | 🚏 | 🏖  | 🌁| 📮 | 🔍 | 🚀 | 🌈 |💡|📖
 | :--------: | :---------: | :---------: | :---------: | :---------: | :---------:| :---------: | :-------: | :-------:| :------:|:------:|:------:|
-| [集合](#常用集合) | [操作系统](#操作系统)|[JVM](#jvm) | [分布式](#分布式相关) |[Web框架](#web框架) |[网络](#网络)| [数据库](#db-相关) |[算法](#数据结构与算法)|[大数据](#大数据)| [设计模式](#设计模式)|[环境配置](#环境配置) |[面试题](#面试题) |
+| [集合](#常用集合) | [并发编程](#并发编程) |[操作系统](#操作系统)|[JVM](#jvm) | [分布式](#分布式相关) |[Web框架](#web框架) |[网络](#网络)| [数据库](#db-相关) |[算法](#数据结构与算法)|[大数据](#大数据)| [设计模式](#设计模式)|[面试题](#面试题) |
 
 
 
@@ -13,10 +13,18 @@
 - [HashMap源码分析及面试题解答](https://github.com/M78Snail/ReadReview/blob/master/MD/collection/hashmapyuan-ma-fen-xi-ji-mian-shi-ti-jie-da.md)
 - [HashTable源码分析](https://github.com/M78Snail/ReadReview/blob/master/MD/collection/hashtableyuan-ma-fen-xi.md)
 - [ConcurrentHashMap源码分析](https://github.com/M78Snail/ReadReview/blob/master/MD/collection/concurrenthashmapyuan-ma-fen-xi.md)
+- [HashMap、HashTable、ConcurrentHashMap的区别](https://github.com/M78Snail/ReadReview/blob/master/MD/collection/different.md)
 - [死锁](https://github.com/M78Snail/ReadReview/blob/master/MD/collection/si-suo.md)
 - [Java线程面试题合集](https://github.com/M78Snail/ReadReview/blob/master/MD/collection/java_thread.md)
 
+### 并发编程
+
+- [Volatile关键字](https://github.com/M78Snail/ReadReview/blob/master/MD/concurrent/volatile.md)
+- [启动线程有哪几种方式？](https://github.com/M78Snail/ReadReview/blob/master/MD/concurrent/thread.md)
+- [线程池有哪几种](https://github.com/M78Snail/ReadReview/blob/master/MD/concurrent/executor.md)
+
 ### 操作系统
+
 - [进程和线程的区别](https://github.com/M78Snail/ReadReview/blob/master/MD/system/jin-cheng-he-xian-cheng-de-qu-bie.md)
 - [死锁的必要条件，怎么处理死锁](https://github.com/M78Snail/ReadReview/blob/master/MD/system/si-suo-de-bi-yao-tiao-jian-ff0c-zen-yao-chu-li-si-suo.md)
 - [Window内存管理方式](https://github.com/M78Snail/ReadReview/blob/master/MD/system/window-nei-cun-guan-li-fang-shi-ff1a-duan-cun-chu-ff0c-ye-cun-chu-ff0c-duan-ye-cun-chu.md)
@@ -64,6 +72,7 @@
   - [Spring框架中标签的配置](https://github.com/M78Snail/ReadReview/blob/master/MD/spring/springkuang-jia-4e2d3c-bean-biao-qian-de-pei-zhi.md)
   - [依赖注入-- 配置文件方式](https://github.com/M78Snail/ReadReview/blob/master/MD/spring/yi-lai-zhu-ru.md)
   - [依赖注入-- 注解方式](https://github.com/M78Snail/ReadReview/blob/master/MD/spring/yi-lai-zhu-5165-zhu-jie-fang-shi.md)
+  - [SpringIOC原理？自己实现IOC要怎么做，哪些步骤？](https://github.com/M78Snail/ReadReview/blob/master/MD/spring/ioc.md)
   - [AOP那点事](https://github.com/M78Snail/ReadReview/blob/master/MD/spring/aop_thing.md)
   - [AOP（XML方式）](https://github.com/M78Snail/ReadReview/blob/master/MD/spring/aop.md)
   - [AOP（注解方式）](https://github.com/M78Snail/ReadReview/blob/master/MD/spring/aopff08-zhu-jie-fang-shi-ff09.md)
@@ -154,6 +163,7 @@
 ### 大数据
 
 - [AI时代就业指南：Java 程序员如何转行做大数据？](https://github.com/M78Snail/ReadReview/blob/master/MD/bigdata/aishi-dai-jiu-ye-zhi-nan-ff1a-java-cheng-xu-yuan-ru-he-zhuan-xing-zuo-da-shu-ju-ff1f.md)
+- [10万个URL去重](https://github.com/M78Snail/ReadReview/blob/master/MD/bigdata/url.md)
 - [Hadoop](https://github.com/M78Snail/ReadReview/blob/master/MD/bigdata/hadoop.md)
   - [SSH免密码连接](https://github.com/M78Snail/ReadReview/blob/master/MD/bigdata/hadoop/sshmian-mi-ma-lian-jie.md)
   - [测试](https://github.com/M78Snail/ReadReview/blob/master/MD/bigdata/hadoop/ce-shi.md)
