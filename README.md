@@ -22,6 +22,8 @@
 - [Volatile关键字](https://github.com/M78Snail/ReadReview/blob/master/MD/concurrent/volatile.md)
 - [启动线程有哪几种方式？](https://github.com/M78Snail/ReadReview/blob/master/MD/concurrent/thread.md)
 - [线程池有哪几种](https://github.com/M78Snail/ReadReview/blob/master/MD/concurrent/executor.md)
+- [Java线程池分析](https://github.com/M78Snail/ReadReview/blob/master/MD/concurrent/executor_queue.md)
+- [什么是Java内存模型](https://github.com/M78Snail/ReadReview/blob/master/MD/concurrent/jmm.md)
 
 ### 操作系统
 
@@ -39,11 +41,12 @@
 - [堆里面的分区](https://github.com/M78Snail/ReadReview/blob/master/MD/jvm/dui-li-miande-fen-qu-ff1a-eden-survival-from-to-ff0c-lao-nian-dai-ff0c-ge-zi-de-te-dian.md)
 - [对象的创建与内存分配](https://github.com/M78Snail/ReadReview/blob/master/MD/jvm/dui-xiang-chuang-jian-fang-fa-ff0c-dui-xiang-de-nei-cun-fen-pei-ff0c-dui-xiang-de-fang-wen-ding-wei.md)
 - [GC的两种判定方法](https://github.com/M78Snail/ReadReview/blob/master/MD/jvm/gcde-liang-zhong-pan-ding-fang-fa-ff1a-yin-yong-ji-shu-yu-yin-yong-lian.md)
-- [GC的三种收集方法](https://github.com/M78Snail/ReadReview/blob/master/MD/jvm/gcde-san-zhong-shou-ji-fang-fa-ff1a-biao-ji-qing-chu-3001-biao-ji-zheng-li-3001-fu-zhi-suan-fa-de-yuan-li-yu-te-dian-ff0c-fen-bie-yong-zai-shi-yao-di-fang.md)
+- [GC的四种收集方法](https://github.com/M78Snail/ReadReview/blob/master/MD/jvm/gcde-san-zhong-shou-ji-fang-fa-ff1a-biao-ji-qing-chu-3001-biao-ji-zheng-li-3001-fu-zhi-suan-fa-de-yuan-li-yu-te-dian-ff0c-fen-bie-yong-zai-shi-yao-di-fang.md)
 - [GC收集器有哪些？它们的特点是？](https://github.com/M78Snail/ReadReview/blob/master/MD/jvm/gcshou-ji-qi-you-na-xie-ff1f-ta-men-de-te-dian-shi-ff1f.md)
 - [Minor GC与Full GC分别在什么时候发生](https://github.com/M78Snail/ReadReview/blob/master/MD/jvm/minor-gcyu-full-gc-fen-bie-zai-shi-yao-shi-hou-fa-sheng-ff1f.md)
 - [类加载的五个过程](https://github.com/M78Snail/ReadReview/blob/master/MD/jvm/lei-jia-zai-de-wu-ge-guo-cheng-ff1a-jia-zai-3001-yan-zheng-3001-zhun-bei-3001-jie-xi-3001-chu-shi-hua.md)
 - [双亲委派模型](https://github.com/M78Snail/ReadReview/blob/master/MD/jvm/shuang-qin-wei-pai-mo-xing-ff1a-bootstrap-classloader-extension-classloader-applicationclassloader.md)
+- [Tomcat 类加载器之为何违背双亲委派模型](https://github.com/M78Snail/ReadReview/blob/master/MD/jvm/tomcat_class_load.md)
 - [分派：静态分派与动态分派](https://github.com/M78Snail/ReadReview/blob/master/MD/jvm/fen-pai-ff1a-jing-tai-fen-pai-yu-dong-tai-fen-pai.md)
 
 ### 分布式相关
@@ -204,3 +207,4 @@
 ### 面试题
 
 - [阿里巴巴的最新面试题目：基础+高级+架构](https://github.com/M78Snail/ReadReview/blob/master/MD/interview/ali01.md)
+- [蚂蚁中间件团队面试题：Netty+Redis+Kafka+MongoDB+分布式](https://github.com/M78Snail/ReadReview/blob/master/MD/interview/ali02.md)
