@@ -37,15 +37,26 @@
 
 ### 10. Java的网络编程，讲讲NIO的实现方式，与BIO的区别，以及介绍常用的NIO框架。
 
+- [NIO网络编程](https://juejin.im/post/5afd4546f265da0b70261e96)
+
 ### 11. 索引什么时候会失效变成全表扫描
 
+- [使用索引可能失效的场景](https://github.com/M78Snail/ReadReview/blob/master/MD/db/mysql/index_cannot.md)
+
 ### 12. 介绍下分布式的paxos和raft算法
+
+- [分布式系列文章——Paxos算法原理与推导](https://www.cnblogs.com/linbingdong/p/6253479.html)
+- [Raft 算法](https://www.jianshu.com/p/2a22ed3d0107)
 
 ## **二面**
 
 ### 1. 你在项目中怎么用到并发的。
 
+[java Web项目中什么场景中会用到java多线程?](https://blog.csdn.net/u012661010/article/details/76696309)
+
 ### 2. 消息队列的使用场景，谈谈Kafka
+
+[消息队列的使用场景](https://blog.csdn.net/he90227/article/details/50800646)
 
 ### 3. 你说了解分布式服务，那么你怎么理解分布式服务。
 

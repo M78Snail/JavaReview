@@ -1,6 +1,5 @@
 
-| ![](/assets/import5.1.png) |
-| :---: |
+![](/assets/import5.1.png) 
 
 **信号量:**
 

@@ -119,6 +119,7 @@
 - [TCP和UDP的区别](https://github.com/M78Snail/ReadReview/blob/master/MD/net/tcpyuudp-de-qu-bie.md)
 - [IP地址分类](https://github.com/M78Snail/ReadReview/blob/master/MD/net/ipdi-zhi-fen-lei.md)
 - [Session和Cookie的区别](https://github.com/M78Snail/ReadReview/blob/master/MD/net/session_cookie.md)
+- [Java中session的用法](https://github.com/M78Snail/ReadReview/blob/master/MD/net/session_use.md)
 
 ### DB 相关
 
