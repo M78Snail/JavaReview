@@ -117,7 +117,7 @@
    3. 步骤三:在需要进行事务管理的类中,注入事务管理的模板.
 
       ```java
-      <bean id="accountService" class="com.zjipst.demo1.AccountServiceImpl">
+      <bean id="accountService" class="com.test.demo1.AccountServiceImpl">
           <property name="accountDao" ref="accountDao" />
           <property name="transactionTemplate" ref="transactionTemplate" />
       </bean>
@@ -186,7 +186,7 @@
    <!-- 配置AOP切面产生代理 -->
    <aop:config>
        <aop:advisor advice-ref="myAdvice"
-           pointcut="execution(* com.zjipst.demo2.AccountServiceImpl.pay(..))" />
+           pointcut="execution(* com.test.demo2.AccountServiceImpl.pay(..))" />
    </aop:config>
    ```
 
