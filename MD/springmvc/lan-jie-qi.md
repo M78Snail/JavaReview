@@ -53,7 +53,7 @@ public class Interceptor1 implements HandlerInterceptor {
         <!-- 拦截请求的路径 要拦截所有必需配置成/** -->
         <mvc:mapping path="/**" />
         <!-- 指定拦截器的位置 -->
-        <bean class="com.zjipst.interceptor.Interceptor1"></bean>
+        <bean class="com.test.interceptor.Interceptor1"></bean>
     </mvc:interceptor>
 </mvc:interceptors>
 ```
