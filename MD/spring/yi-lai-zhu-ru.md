@@ -30,7 +30,7 @@ public class UserServiceImpl implements UserService {
 
 ```java
 !-- 使用bean标签 -->
-<bean id="userService" class="com.zjipst.demo.UserServiceImpl">
+<bean id="userService" class="com.test.demo.UserServiceImpl">
     <property name="name" value="小凤" />
 </bean>
 ```
@@ -63,9 +63,9 @@ public class CustomerServiceImpl {
 
 ```java
 <!-- 演示的依赖注入 -->
-<bean id="customerDao" class="com.zjipst.demo.CustomerDaoImpl" />
+<bean id="customerDao" class="com.test.demo.CustomerDaoImpl" />
 
-<bean id="customerService" class="com.zjipst.demo.CustomerServiceImpl">
+<bean id="customerService" class="com.test.demo.CustomerServiceImpl">
 	<property name="customerDao" ref="customerDao" />
 </bean>
 ```
@@ -118,7 +118,7 @@ public class Person {
 
 ```java
 <!-- 演示的构造方法的注入的方式 -->
-<bean id="car1" class="com.zjipst.demo.Car1">
+<bean id="car1" class="com.test.demo.Car1">
     <!-- 
     <constructor-arg name="cname" value="奇瑞QQ"/> 
     <constructor-arg name="price" value="25000"/> 
@@ -128,7 +128,7 @@ public class Person {
     <constructor-arg index="1" value="545000" />
 </bean>
 
-<bean id="person" class="com.zjipst.demo.Person">
+<bean id="person" class="com.test.demo.Person">
     <constructor-arg name="pname" value="美美" />
     <constructor-arg name="car1" ref="car1" />
 </bean>
@@ -173,7 +173,7 @@ public class User {
 ```
 
 ```java
-<bean id="user" class="com.zjipst.demo.User">
+<bean id="user" class="com.test.demo.User">
     <property name="arrs">
         <list>
             <value>哈哈</value>
