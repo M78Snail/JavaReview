@@ -22,7 +22,7 @@ jdbc.password=root
 ```
 <typeAliases>
     <!-- 使用包扫描的方式批量定义别名 定以后别名等于类名,不区分大小写,但是建议按照java命名规则来,首字母小写,以后每个单词的首字母大写 -->
-    <package name="com.zjipst.pojo" />
+    <package name="com.test.pojo" />
 </typeAliases>
 ```
 
@@ -48,7 +48,7 @@ jdbc.password=root
 
 ```java
 <mappers>
-    <package name="com.zjipst.mapper" />
+    <package name="com.test.mapper" />
 </mappers>
 ```
 
