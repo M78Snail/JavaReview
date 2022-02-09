@@ -21,7 +21,7 @@ public class UserServiceImpl implements UserService {
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
 
     <!-- 开启注解的扫描 -->
-    <context:component-scan base-package="com.zjipst"/>
+    <context:component-scan base-package="com.test"/>
 
 </beans>
 ```
