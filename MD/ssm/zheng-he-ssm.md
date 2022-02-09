@@ -53,7 +53,7 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 
     <!-- 配置Mapper扫描器 -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.zjipst.dao"/>
+        <property name="basePackage" value="com.test.dao"/>
     </bean>
 
 </beans>
@@ -101,7 +101,7 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
     <!-- 切面 -->
     <aop:config>
         <aop:advisor advice-ref="txAdvice"
-            pointcut="execution(* com.zjipst.service.*.*(..))" />
+            pointcut="execution(* com.test.service.*.*(..))" />
     </aop:config>
 
 </beans>
@@ -123,7 +123,7 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
     http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.0.xsd">
 
     <!-- @Service扫描 -->
-    <context:component-scan base-package="com.zjipst.service"></context:component-scan>
+    <context:component-scan base-package="com.test.service"></context:component-scan>
 </beans>
 ```
 
@@ -150,7 +150,7 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
     <!-- @Controller注解扫描 -->
-    <context:component-scan base-package="com.zjipst.controller"></context:component-scan>
+    <context:component-scan base-package="com.test.controller"></context:component-scan>
 
     <!-- 注解驱动: 替我们显示的配置了最新版的注解的处理器映射器和处理器适配器 -->
     <mvc:annotation-driven conversion-service="conversionService"></mvc:annotation-driven>
