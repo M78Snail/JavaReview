@@ -67,13 +67,13 @@ public class User {
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.zjipst.mapper.User">
+<mapper namespace="com.test.mapper.User">
 
-    <select id="findUserById" parameterType="int" resultType="com.zjipst.pojo.User">
+    <select id="findUserById" parameterType="int" resultType="com.test.pojo.User">
         select * from user where id=#{id}
     </select>
 
-     <select id="findUserByUserName" parameterType="string" resultType="com.zjipst.pojo.User">
+     <select id="findUserByUserName" parameterType="string" resultType="com.test.pojo.User">
          select * from user where username like '%${value}%' 
      </select>
      
@@ -96,7 +96,7 @@ mybatis框架需要加载映射文件，将Users.xml添加在SqlMapConfig.xml，
 
 ```java
 <mappers>
-    <mapper resource="com/zjipst/mapper/User.xml" />
+    <mapper resource="com/test/mapper/User.xml" />
 </mappers>
 ```
 
@@ -131,7 +131,7 @@ public class UserTest {
             // 创建数据库会话实例sqlSession
             sqlSession = sqlSessionFactory.openSession();
             // 查询单个记录，根据用户id查询用户信息
-            User user = sqlSession.selectOne("com.zjipst.mapper.User.findUserById", 10);
+            User user = sqlSession.selectOne("com.test.mapper.User.findUserById", 10);
             // 输出用户信息
             System.out.println(user);
         } catch (Exception e) {
@@ -162,7 +162,7 @@ public class UserTest {
    3. resultType:id的类型,也就是keyproperties中属性的类型
 
 ```java
-<insert id="insertUser" parameterType="com.zjipst.pojo.User">
+<insert id="insertUser" parameterType="com.test.pojo.User">
     <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
         select
         LAST_INSERT_ID()
@@ -190,7 +190,7 @@ public void testInsertUser() throws Exception{
     user.setAddress("北京昌平");
     System.out.println("====" + user.getId());
 
-    openSession.insert("com.zjipst.mapper.User.insertUser", user);
+    openSession.insert("com.test.mapper.User.insertUser", user);
     //提交事务(mybatis会自动开启事务,但是它不知道何时提交,所以需要手动提交事务)
     openSession.commit();
 
@@ -222,7 +222,7 @@ public void testDelUserById()throws Exception{
     //通过工厂创建会话
     SqlSession openSession = factory.openSession();
 
-    openSession.delete("com.zjipst.mapper.User.delUserById", 28);
+    openSession.delete("com.test.mapper.User.delUserById", 28);
     //提交
     openSession.commit();
 }
@@ -235,7 +235,7 @@ public void testDelUserById()throws Exception{
 注意更新操作传入的类型
 
 ```java
-<update id="updateUserById" parameterType="com.zjipst.pojo.User">
+<update id="updateUserById" parameterType="com.test.pojo.User">
     update user set
     username=#{username} where id=#{id}
 </update>
@@ -255,7 +255,7 @@ public void testUpdateUserById() throws Exception {
     User user = new User();
     user.setId(28);
     user.setUsername("王麻子");
-    openSession.update("com.zjipst.mapper.User.updateUserById", user);
+    openSession.update("com.test.mapper.User.updateUserById", user);
 
     // 提交
     openSession.commit();
