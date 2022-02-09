@@ -47,7 +47,7 @@ CustomerDaoImpl -- 实现类
 
 ```java
 <!-- 配置目标对象 -->
-<bean id="customerDao" class="com.zjipst.demo2.CustomerDaoImpl" />
+<bean id="customerDao" class="com.test.demo2.CustomerDaoImpl" />
 ```
 
 **步骤五：定义切面类**
@@ -103,7 +103,7 @@ public class MyAspectAnno {
 ## 自动定义切入点
 
 ```java
-@Pointcut(value="execution(public void com.zjipst.demo2.CustomerDaoImpl.update())")
+@Pointcut(value="execution(public void com.test.demo2.CustomerDaoImpl.update())")
 public void fn(){}
 
 /**
