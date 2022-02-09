@@ -86,7 +86,7 @@ public class Orders {
     <result column="createtime" property="createtime" />
     <result column="note" property="note" />
 
-    <association property="user" javaType="com.zjipst.pojo.User">
+    <association property="user" javaType="com.test.pojo.User">
         <id column="id" property="id" />
         <result column="username" property="username" />
         <result column="birthday" property="birthday" />
@@ -129,7 +129,7 @@ public class User {
     <result column="address" property="address" />
 
     <!-- 指定对应的集合对象关系映射 property:将数据放入User对象中的ordersList属性中 ofType:指定ordersList属性的泛型类型 -->
-    <collection property="ordersList" ofType="com.zjipst.pojo.Orders">
+    <collection property="ordersList" ofType="com.test.pojo.Orders">
         <id column="oid" property="id" />
         <result column="user_id" property="userId" />
         <result column="number" property="number" />
