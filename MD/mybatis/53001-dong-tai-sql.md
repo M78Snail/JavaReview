@@ -52,7 +52,7 @@ where标签作用:
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.zjipst.mapper.UserMapper">
+<mapper namespace="com.test.mapper.UserMapper">
 
     <sql id="user_Where">
         <where>
