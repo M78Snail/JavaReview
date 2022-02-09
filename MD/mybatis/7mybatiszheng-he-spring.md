@@ -49,7 +49,7 @@
     <!-- 配置MyBaties全局配置文件:mybatis-config.xml -->
     <property name="configLocation" value="classpath:SqlMapConfig.xml" />
     <!-- 扫描entity包 使用别名 -->
-    <property name="typeAliasesPackage" value="com.zjipst.pojo" />
+    <property name="typeAliasesPackage" value="com.test.pojo" />
     <!-- 扫描sql配置文件:mapper需要的xml文件 -->
     <property name="mapperLocations" value="classpath:mapper/mc/*.xml" />
 </bean>
@@ -68,7 +68,7 @@
     <!-- 注入sqlSessionFactory -->
     <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
     <!-- 给出需要扫描Dao接口包 -->
-    <property name="basePackage" value="com.zjipst.mapper" />
+    <property name="basePackage" value="com.test.mapper" />
 </bean>
 ```
 
