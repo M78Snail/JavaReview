@@ -64,16 +64,16 @@ public class MyAspectXml {
     <!-- bean definitions here -->
 
     <!-- 配置客户的dao -->
-    <bean id="customerDao" class="com.zjipst.demo.CustomerDaoImpl" />
+    <bean id="customerDao" class="com.test.demo.CustomerDaoImpl" />
 
     <!-- 配置切面类 -->
-    <bean id="myAspectXml" class="com.zjipst.demo.MyAspectXml" />
+    <bean id="myAspectXml" class="com.test.demo.MyAspectXml" />
 
     <!-- 配置AOP -->
     <aop:config>
         <!-- 配置切面类：切入点 + 通知（类型） -->
         <aop:aspect ref="myAspectXml">
-            <aop:before method="log" pointcut="execution(public void com.zjipst.demo.CustomerDaoImpl.save())"/>
+            <aop:before method="log" pointcut="execution(public void com.test.demo.CustomerDaoImpl.save())"/>
         </aop:aspect>
     </aop:config>
 </beans>
@@ -99,7 +99,7 @@ public class MyAspectXml {
 
 * 返回值类型是不能省略不写的，根据你的方法来编写返回值。可以使用 \* 代替。
 
-* 包名例如：com.zjipst.demo.BookDaoImpl
+* 包名例如：com.test.demo.BookDaoImpl
 
   * 首先com是不能省略不写的，但是可以使用 \* 代替
   * 中间的包名可以使用 \* 号代替
