@@ -40,7 +40,7 @@
 	http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd">
 	
 	<!-- 配置@Controller注解 -->
-	<context:component-scan base-package="com.zjipst.controller"></context:component-scan>
+	<context:component-scan base-package="com.test.controller"></context:component-scan>
 	
 </beans>
 ```
