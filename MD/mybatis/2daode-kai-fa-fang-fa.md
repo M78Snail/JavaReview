@@ -38,9 +38,9 @@ public interface UserMapper {
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.zjipst.mapper.UserMapper">
+<mapper namespace="com.test.mapper.UserMapper">
 
-    <select id="findUserById" parameterType="int" resultType="com.zjipst.pojo.User">
+    <select id="findUserById" parameterType="int" resultType="com.test.pojo.User">
         select * from user where id=#{id}
     </select>
 
@@ -48,7 +48,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         select * from user where username like '%${value}%'
     </select>
 
-    <insert id="insertUser" parameterType="com.zjipst.pojo.User" >
+    <insert id="insertUser" parameterType="com.test.pojo.User" >
         <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
             select LAST_INSERT_ID()
         </selectKey>
